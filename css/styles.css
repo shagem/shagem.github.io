@@ -1,0 +1,53 @@
+body	{
+background-size: auto;
+background-image: url("../img/background.jpeg");
+}
+
+h1 { font-size:250%;}
+h2 { font-size:180%;}
+h3 { font-size:160%;}
+h4 { font-size:125%;}
+
+h1, h2, h3, h4 {
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p	{
+font-size: 115%;
+}
+
+a	{		
+text-decoration: none;
+color: #dea751;
+}
+
+a:visited {
+color: #dea751;
+}
+
+.clearFloats {
+clear: both;
+}
+
+/* Banner CSS */
+/* Override default*/
+.jumbotron {
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #737373;
+  border-radius: 0.3rem;
+}
+
+.bannerName	{
+font-size: 500%; 
+color: #dea751;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.bannerLetters	{
+margin-top: -15px;
+font-size: 230%; 
+color: #dea751;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+/* End Banner CSS*/
