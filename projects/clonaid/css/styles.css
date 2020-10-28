@@ -1,0 +1,73 @@
+body	{
+	background-color: #d5d9dd;
+}
+
+h1 { font-size:250%;}
+h2 { font-size:180%;}
+h3 { font-size:160%;}
+h4 { font-size:125%;}
+h5 { font-size:90%; color:white;}
+h6 { font-size:75%;}
+
+h1, h2, h3, h4 {
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h6 {
+	color: black;
+}
+
+p	{
+font-size: 115%;
+}
+
+li	{
+	padding-bottom: 3px;
+}
+
+.container	{
+	background-color: #ffffff;
+	margin-bottom: 90px;
+	padding-top: 20px;
+}
+
+.container-xl	{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 70px;
+}
+
+.navbar {
+	position: absolute;
+	padding: 1rem 1rem;
+	background-color: #4da6ff;
+	width: 100%;
+}
+
+.carousel	{
+	margin-bottom: 50px;
+	width: 800px;
+	
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+	height: 100%;
+	width: auto;
+}
+
+.btn-primary	{
+	background-color: #80bfff;
+}
+
+.card	{	
+	margin: 0 auto;
+	float: none;
+	margin-bottom: 10px;
+}
+
+

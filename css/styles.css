@@ -1,53 +1,54 @@
-body	{
-background-size: auto;
-background-image: url("../img/background.jpeg");
+/* Color Palette Codes
+#000000 Black
+#7f95d1 Blue
+#ff82a9 Pink
+#ffc0be Lighter Pink
+#ffebe7 Tan/Creme
+ */
+
+body {
+	background-color: #2b2b2b;
 }
 
-h1 { font-size:250%;}
-h2 { font-size:180%;}
-h3 { font-size:160%;}
-h4 { font-size:125%;}
+a {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: #758fd9; opacity: 0.7;}
 
-h1, h2, h3, h4 {
-font-family: "Trebuchet MS", Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Libre Franklin';
+	font-weight: 700;
 }
 
-p	{
-font-size: 115%;
+h1 { 
+	font-size: 500%;
+	color: #758fd9;
 }
 
-a	{		
-text-decoration: none;
-color: #dea751;
+p { font-size: 105%;}
+
+.blackLine { border: 2px solid black; margin: 10px 50px 10px 50px;}
+
+img {width: 100%;}
+.img-sm {width: 25%;}
+.img-md {width: 50%;}
+.img-lg {width: 75%;}
+
+.center-obj { margin: auto;}
+
+.topSpace-sm {margin-top: 10px;}
+.topSpace-md {margin-top: 20px;}
+.topSpace-lg {margin-top: 30px;}
+
+
+.headerNameFont {
+	font-size: 300%;
+	color: #ff82a9;
+	padding-left: 50px;
+	padding-top: 20px;
 }
 
-a:visited {
-color: #dea751;
+.headerJobFont {
+	font-size: 150%;
+	color: #ff82a9;
+	padding-left: 50px;
 }
-
-.clearFloats {
-clear: both;
-}
-
-/* Banner CSS */
-/* Override default*/
-.jumbotron {
-  padding: 1rem 1rem;
-  margin-bottom: 1.5rem;
-  background-color: #737373;
-  border-radius: 0.3rem;
-}
-
-.bannerName	{
-font-size: 500%; 
-color: #dea751;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.bannerLetters	{
-margin-top: -15px;
-font-size: 230%; 
-color: #dea751;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-/* End Banner CSS*/
