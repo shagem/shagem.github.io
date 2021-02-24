@@ -1,0 +1,16 @@
+
+body {
+	background-image: url('../img/img_1.jpeg');
+	background-attachment: fixed;
+	background-size: cover;
+		}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {color: #6167AF; font-family: 'Merriweather';}
+
+.banner_img {width: 100%;}
+
+.homefont {font-size: 500%; font-family: 'Exo 2', sans-serif; color: white;}
+
