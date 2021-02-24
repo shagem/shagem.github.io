@@ -6,3 +6,5 @@ h1, h2, h3, h4, h5, h6 {color: black;}
 .topSpace-xl {padding-top: 50px;}
 
 .accordion-header, .accordion-body {background-color: white;}
+
+.welcome {font-size: 500%; color: white; border-bottom: solid 3px white;}
