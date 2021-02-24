@@ -4,7 +4,6 @@ body {background-color: black;}
 a {text-decoration: none;}
 
 img {width: 100%;}
-img.terrance {width: 25%;}
 
 h1, h2, h3, h4, h5, h6 {color: black;}
 
@@ -19,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {color: black;}
 
 .accordion-header, .accordion-body {background-color: white;}
 
-.welcome {font-size: 500%; color: white; border-bottom: solid 3px white;}
+.welcome {font-size: 450%; color: white; border-bottom: solid 3px white;}
 
 .border-b {border-bottom: 2px solid black; padding-bottom: 5px;}
 
