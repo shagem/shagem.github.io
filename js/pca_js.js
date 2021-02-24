@@ -1,4 +1,4 @@
 
 $(document).ready(function(){
-  $("#homeAccordion").fadeIn()
+  $(".accordion").hide().fadeIn(3000)
 });
