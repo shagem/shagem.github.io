@@ -1,16 +1,19 @@
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:visited {text-decoration: none;}
 
-body {
-	background-image: url('../img/img_1.jpeg');
-	background-attachment: fixed;
-	background-size: cover;
-		}
+.container {background-color: white;}
 
-
-
+.topSpace-xl {padding-top: 200px;}
+.topSpace-lg {padding-top: 100px;}
+.topSpace-md {padding-top: 50px;}
+.topSpace-sm {padding-top: 20px;}
 
 h1, h2, h3, h4, h5, h6 {color: #6167AF; font-family: 'Merriweather';}
 
 .banner_img {width: 100%;}
 
-.homefont {font-size: 500%; font-family: 'Exo 2', sans-serif; color: white;}
+.homefont {font-size: 500%; font-family: 'Exo 2', sans-serif;}
+h6.homefont {font-size: 250%; font-family: 'Exo 2', sans-serif;}
 
+.border-b {border: solid 2px #6167AF;}
