@@ -1,7 +1,16 @@
 $(document).ready(function(){
-	$(".homefont").hide().fadeIn(4000);
+	$(".homefont").fadeIn(4000);
 });
 
 $(document).ready(function(){
-	$(".fa-eye").hide().fadeIn(4000);
+	$(".fa-dna").fadeIn(4000);
 });
+
+$(document).ready(function(){
+	$(".gutter_img").fadeIn(1000, function(){
+		$(".gutter_img2").fadeIn(1000, function(){
+			$(".gutter_img3").fadeIn(1000);
+		});
+	});
+});
+
