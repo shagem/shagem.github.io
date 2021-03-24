@@ -2,6 +2,7 @@
 body {background-color: black; padding-bottom: 25px;}
 
 a {text-decoration: none;}
+a:hover {opacity: .6;}
 
 img {width: 100%;}
 
@@ -24,11 +25,13 @@ canvas {margin: 0 auto; display: block;}
 .bottomSpace-sm {padding-bottom: 5px;}
 
 .border-bb {border-bottom: 2px solid black; padding-bottom: 5px;}
+.border-w {border: 2px solid white; padding: 10px;}
 .border-bw {border-bottom: 2px solid white; padding-bottom: 5px;}
 
 .text-white {color: white;}
 .text-black {color: black;}
 
 .text-lobster {font-family: 'Lobster', cursive;}
+.text-cabin {font-family: 'Cabin', sans-serif;}
 
 .accordion-header, .accordion-body {background-color: white;}
