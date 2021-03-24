@@ -35,3 +35,5 @@ canvas {margin: 0 auto; display: block;}
 .text-cabin {font-family: 'Cabin', sans-serif;}
 
 .accordion-header, .accordion-body {background-color: white;}
+
+.fab {color: white; padding-left: 15px; padding-right: 15px;}
