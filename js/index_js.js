@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".accordion").hide().fadeIn(3000);
+  $(".hidden").hide().fadeIn(3000);
 });
 
 $(document).ready(function(){
