@@ -6,35 +6,3 @@ $(document).ready(function(){
 
 
 
-//Work page js
-$(document).ready(function(){
-  $("#web_design_content").hide();
-  $("#digital_art_content").hide();
-  $("#photography_content").hide();
-  $("#3d_art_content").hide();
-});
-
-$(document).ready(function(){
-	$("#web_design").click(function(){
-		$("#web_design_content").toggle();
-		});
-});
-
-$(document).ready(function(){
-	$("#photography").click(function(){
-		$("#photography_content").toggle();
-		});
-});
-
-$(document).ready(function(){
-	$("#digital_art").click(function(){
-		$("#digital_art_content").toggle();
-		});
-});
-
-$(document).ready(function(){
-	$("#3d_art").click(function(){
-		$("#3d_art_content").toggle();
-		});
-});
-
