@@ -1,7 +1,7 @@
 
 //fade command
 $(document).ready(function(){
-  $(".hidden").hide().fadeIn(3000);
+  $(".hidden").fadeIn(3000);
 });
 
 
