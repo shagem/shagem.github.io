@@ -52,6 +52,7 @@ function draw() {
 	let x = mouseX;
 	let y = mouseY;
 	
+	
 		
 		if (mouseButton === LEFT){
 			translate( -windowWidth / 2, -windowHeight / 2); 
