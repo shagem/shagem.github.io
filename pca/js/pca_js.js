@@ -1,3 +1,9 @@
+
+
+$(document).ready(function(){
+	$(".barImg").show();
+});
+
 $(document).ready(function(){
 	$(".homefont").fadeIn(4000);
 });

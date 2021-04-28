@@ -6,6 +6,7 @@ a:visited {text-decoration: none;}
 a.page_link:hover{text-decoration: underline; color: #6167AF;}
 
 .container {background-color: white;}
+.container-fluid {margin: auto;}
 
 img {max-width: 100%; height: auto;}
 
@@ -51,4 +52,10 @@ h6.homefont {font-size: 250%; font-family: 'Exo 2', sans-serif; font-weight: 200
 .accordion-header {background-color: white;}
 .accordion-body {background-color: white;}
 
+.navbar-brand {padding-left: 10px;}
+.nav-link {font-size: 18px;}
+
+
+
 .citations {position: fixed; bottom: 0; right: 0; width: 150px; border: 2px solid #6167AF;}
+
