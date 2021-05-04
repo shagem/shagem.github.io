@@ -14,13 +14,14 @@ function setup() {
 	
 	
 	
-	background(150);
+	background(255);
 }
 
 
 function draw() {
 	
 	scale(3);
+	rotateX(180);
 	model(blenderLB);
 	
 }
