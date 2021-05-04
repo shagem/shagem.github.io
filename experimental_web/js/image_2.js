@@ -1,0 +1,34 @@
+
+
+let blenderLB;
+
+function preload() {
+  blenderLB = loadModel('img/blenderPlate.obj', true);
+}
+
+
+
+function setup() {
+	createCanvas(windowWidth, windowHeight, WEBGL);
+	angleMode(DEGREES);
+	
+	
+	
+	background(150);
+}
+
+
+function draw() {
+	
+	rotateY(frameCount * 0.01);
+	scale(20);
+	model(blenderLB);
+	
+}
+
+
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  
+}
