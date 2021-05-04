@@ -1,6 +1,10 @@
 
 let circleSize;
 let borderWidth;
+let r;
+let g;
+let b;
+
 
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
@@ -18,6 +22,10 @@ function setup() {
 function draw() {
 
 	strokeWeight(borderWidth);
+	
+	r = random(1,255);
+	g = random(1,255);
+	b = random(1,255);
 
 	if (mouseX > windowWidth / 2 & mouseY > windowHeight / 2){
 	circleSize = random(1, windowWidth + 250);
@@ -43,6 +51,24 @@ function draw() {
 	fill(255, 249, 79, 10);
 	circle(0, 0, circleSize);
 	}
+	
+	if (mouseIsPressed){
+		if (mouseButton === LEFT) {
+		circleSize = random(1, windowWidth + 250);
+		
+		
+		stroke(r, g, b, 10);
+		fill(r, g, b, 10);
+		circle(mouseX - (windowWidth / 2), mouseY - (windowHeight / 2), circleSize);
+		}
+		if (mouseButton === RIGHT) {
+		circleSize = random(1, windowWidth + 250);
+		stroke(255, 255, 255, 10);
+		fill(0, 0, 0, 10);
+		circle(mouseX - (windowWidth / 2), mouseY - (windowHeight / 2), circleSize);
+		}
+	}
+	
 	
 }
 

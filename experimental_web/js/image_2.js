@@ -1,8 +1,9 @@
 
+let myFont;
 
-let blenderLL;
-
-
+function preload() {
+	myFont = loadFont('fonts/typographica.ttf');
+}
 
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL);
@@ -10,18 +11,22 @@ function setup() {
 	
 	
 	
-	background(255);
+	background(0);
+	
 }
 
 
 
 function draw() {
+
+	let string = "Click Your Mouse";
+
+	textSize(40);
+	fill(255);
+	textFont(myFont);
+	text(string, windowWidth / 2, windowHeight / 2);
 	
-	orbitControl();
-	scale(3);
-	rotateX(180);
 	
-	blenderLL = loadModel('img/lava_lamp.obj', true);
 	
 	
 }
@@ -31,7 +36,6 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  
 }
 
 
