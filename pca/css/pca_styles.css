@@ -9,6 +9,8 @@ a.page_link:hover{text-decoration: underline; color: #6167AF;}
 .container-fluid {margin: auto;}
 
 img {max-width: 100%; height: auto;}
+.product_img {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.35);}
+.nav_shadow {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); z-index: 1;}
 
 li.nav-b {padding-left: 20px; font-family: 'Exo 2', sans-serif; font-size: 150%; font-weight: 600;}
 
@@ -39,9 +41,6 @@ h6.homefont {font-size: 250%; font-family: 'Exo 2', sans-serif; font-weight: 200
 .learn {font-weight: 600; display: inline;}
 
 .border-b {border: solid 2px #6167AF; padding-bottom: 3px;}
-.border-bb {border-bottom: solid 2px #6167AF; padding-bottom: 3px;}
-.border-bw {border-bottom: solid 2px white; padding-bottom: 3px;}
-.border-tb {border-top: solid 2px #6167AF; padding-bottom: 3px;}
 
 .fade_body {display: none;}
 
