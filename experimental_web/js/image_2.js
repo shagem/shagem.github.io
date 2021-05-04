@@ -24,8 +24,6 @@ function draw() {
 	blenderLL = loadModel('img/lava_lamp.obj', true);
 	
 	
-	
-	
 }
 
 
