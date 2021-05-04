@@ -14,7 +14,7 @@ function setup() {
 	
 	
 	
-	background(255);
+	background(0);
 }
 
 
@@ -22,6 +22,7 @@ function draw() {
 	
 	scale(3);
 	rotateX(180);
+	translateY(-1)
 	model(blenderLB);
 	
 }
