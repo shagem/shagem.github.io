@@ -21,7 +21,7 @@ function setup() {
 function draw() {
 	
 	rotateY(frameCount * 0.01);
-	scale(20);
+	scale(3);
 	model(blenderLB);
 	
 }
