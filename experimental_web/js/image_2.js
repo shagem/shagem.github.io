@@ -1,9 +1,9 @@
 
 
-let blenderLB;
+let blenderLL;
 
 function preload() {
-  blenderLB = loadModel('img/blenderPlate.obj', true);
+  blenderLL = loadModel('img/lava_lamp.obj', true);
 }
 
 
@@ -14,7 +14,7 @@ function setup() {
 	
 	
 	
-	background(0);
+	background(255);
 }
 
 
@@ -23,7 +23,9 @@ function draw() {
 	orbitControl();
 	scale(3);
 	rotateX(180);
-	model(blenderLB);
+	model(blenderLL);
+	
+	
 	
 }
 
