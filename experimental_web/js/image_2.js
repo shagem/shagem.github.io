@@ -2,10 +2,6 @@
 
 let blenderLL;
 
-function preload() {
-  blenderLL = loadModel('img/lava_lamp.obj', true);
-}
-
 
 
 function setup() {
@@ -24,7 +20,9 @@ function draw() {
 	orbitControl();
 	scale(3);
 	rotateX(180);
-	model(blenderLL);
+	
+	blenderLL = loadModel('img/lava_lamp.obj', true);
+	
 	
 	
 	
