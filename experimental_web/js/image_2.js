@@ -20,6 +20,7 @@ function setup() {
 
 function draw() {
 	
+	orbitControl();
 	scale(3);
 	rotateX(180);
 	model(blenderLB);
