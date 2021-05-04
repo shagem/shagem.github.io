@@ -20,9 +20,10 @@ function setup() {
 
 function draw() {
 	
-	scale(3);
+	camera(0, 0, 20 + sin(frameCount * 0.01) * 10, 0, 0, 0, 0, 1, 0);
+	
+	scale(4);
 	rotateX(180);
-	translateY(1);
 	model(blenderLB);
 	
 }
