@@ -22,7 +22,7 @@ function draw() {
 	
 	scale(3);
 	rotateX(180);
-	translateY(1)
+	translateY(1);
 	model(blenderLB);
 	
 }
