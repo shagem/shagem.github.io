@@ -26,9 +26,7 @@ function draw() {
 	textFont(myFont);
 	text(string, windowWidth / 2, windowHeight / 2);
 	
-	
-	
-	
+		
 }
 
 
