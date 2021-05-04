@@ -20,9 +20,7 @@ function setup() {
 
 function draw() {
 	
-	
-	
-	scale(4);
+	scale(3);
 	rotateX(180);
 	model(blenderLB);
 	
