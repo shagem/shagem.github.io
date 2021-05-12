@@ -40,6 +40,7 @@ function draw() {
 		push();
 		push();
 		push();
+		push();
 		stroke(0, 0, 255);
 		torus(ringRadius, tubeRadius);
 		pop();
