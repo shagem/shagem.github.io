@@ -1,4 +1,4 @@
-html {overflow: hidden; cursor: url('../img/mouse.ico'), default;}
+html {overflow: hidden; cursor: url('../img/mouse.ico'), default; max-width: 150%; max-height: 150%}
 
 body { margin: 0; background-color: black;}
 
