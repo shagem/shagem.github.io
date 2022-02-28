@@ -18,4 +18,4 @@ a:hover {color: white; background-color: black; padding-right: 3px; padding-left
 
 .bottomSpace-xl {padding-bottom: 100px;}
 
-.container {background-color: transparent;}
+.container {background-color: transparent; display: none;}
