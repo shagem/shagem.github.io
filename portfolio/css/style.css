@@ -1,13 +1,27 @@
-body {background-color: #6fa8dc;}
+body {background-color: #6fa8dc; font-family: 'Staatliches', cursive; color: white;}
 
-img {width: 100%;}
+a {
+    color: #6fa8dc;
+    text-decoration: none;
+}
 
-.container {background-color: transparent;}
+a:hover {
+    color: #6fa8dc;
+    text-decoration: underline;
+}
+
+a.contact {
+    color: white;
+    text-decoration: underline;
+}
+
+.container {margin-top: 50px; padding-top: 10px; border: 1px solid black;}
 
 .my-btn {
     background-color: transparent;
     border: none;
     font-size: 30px;
+    text-shadow: 2px 2px 2px black;
     color: white;
 }
 
@@ -21,6 +35,7 @@ img {width: 100%;}
 
 .canvas-title {
     color: #6fa8dc;
+    font-size: 30px;
 }
 
 .canvas-link {
