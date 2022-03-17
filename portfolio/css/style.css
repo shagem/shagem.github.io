@@ -1,4 +1,4 @@
-body {background-color: #6fa8dc; font-family: 'Staatliches', cursive; color: white;}
+body {background-color: white; font-family: 'Staatliches', cursive; color: white; margin-bottom: 15px;}
 
 a {
     color: #6fa8dc;
@@ -15,11 +15,17 @@ a.contact {
     text-decoration: underline;
 }
 
-.container-body {margin-top: 30px; padding-top: 10px; border: 1px solid black;}
+a.contact:hover {
+    padding: 0px 10px 6px 10px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px;
+}
+
+.container-body {padding-top: 10px; border: 1px solid black; height: 80vh; background-color: #6fa8dc; box-shadow: 5px 5px 10px black;}
 
 .my-btn {
     position: sticky;
-    background-color: transparent;
+    background-color: #6fa8dc;
     border: none;
     font-size: 30px;
     text-align: left;
@@ -37,7 +43,7 @@ a.contact {
 }
 
 .my-btn:hover, .my-btn:active {
-    background-color: #6fa8dc;
+    background-color: #45698b;
     text-decoration: underline;
 }
 
@@ -52,4 +58,21 @@ a.contact {
     padding-left: 15px;
     margin-top: 30px;
     border-bottom: 1px solid #6fa8dc;
+}
+
+.welcome-font {
+    transform: translateY(25vh);
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+    font-size: 7rem;
+}
+
+h6.welcome-font {
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .welcome-font {
+        font-size: 5rem;
+    }
 }
