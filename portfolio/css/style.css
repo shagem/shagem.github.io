@@ -1,4 +1,8 @@
+
+/* Beginning of Global Styles */
 body {background-color: #45698b; font-family: 'Staatliches', cursive; color: white; margin-bottom: 15px;}
+
+.fa {color: white;}
 
 a {
     color: #6fa8dc;
@@ -8,17 +12,6 @@ a {
 a:hover {
     color: #6fa8dc;
     text-decoration: underline;
-}
-
-a.contact {
-    color: white;
-    text-decoration: underline;
-}
-
-a.contact:hover {
-    padding: 0px 10px 6px 10px;
-    border: 2px solid white;
-    box-shadow: 2px 2px 5px;
 }
 
 .container-body {padding-top: 10px; border: 1px solid black; height: 80vh; background-color: #6fa8dc; box-shadow: 5px 5px 10px black;}
@@ -59,7 +52,11 @@ a.contact:hover {
     margin-top: 30px;
     border-bottom: 1px solid #6fa8dc;
 }
+/* Ending of Global Styles */
 
+
+
+/* Beginning of Index Page Styles */
 .welcome-font {
     transform: translateY(25vh);
     text-align: center;
@@ -67,7 +64,9 @@ a.contact:hover {
     font-size: 7rem;
 }
 
-
+h6.welcome-font {
+    font-size: 3.4rem;
+}
 
 @media screen and (max-width: 600px) {
     .welcome-font {
@@ -75,12 +74,52 @@ a.contact:hover {
     }
 }
 
-h6.welcome-font {
-    font-size: 3.4rem;
-}
-
 @media screen and (max-width: 600px) {
     h6.welcome-font {
         font-size: 2rem;
     }
+}
+/* Ending of Index Page Styles */
+
+
+
+/* Beginning of Contact Page Styles */
+.contact-items {
+    transform: translateY(10vh);
+    text-shadow: 3px 3px 1px black;
+}
+
+h1.contact-items {
+    font-size: 5rem;
+    border-bottom: 2px solid white;
+}
+
+h2.contact-items {
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 20px;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-items {
+        transform: translateY(15vh);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1.contact-items {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2.contact-items {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 1px black;
+    }
+}
+
+.contact-link, .contact-link:hover {
+    color: white;
+    text-decoration: underline;
 }
