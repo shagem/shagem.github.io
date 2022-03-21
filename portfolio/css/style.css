@@ -101,12 +101,6 @@ h2.contact-items {
 }
 
 @media screen and (max-width: 600px) {
-    .contact-items {
-        transform: translateY(15vh);
-    }
-}
-
-@media screen and (max-width: 600px) {
     h1.contact-items {
         font-size: 3rem;
     }
