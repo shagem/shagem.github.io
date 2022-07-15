@@ -1,18 +1,18 @@
 
-/* Beginning of Global Styles */
-body {background-color: #b2b2b2; color: black; font-family: 'Ubuntu', sans-serif;}
+body {background-color: #b2b2b2; color: black; font-family: 'Open Sans', sans-serif; margin-top: 30px;}
+
+.container {background-color: white; padding: 15px 75px 15px 75px; box-shadow: 5px 5px 10px 7px; width: 60vw; margin: auto;}
 
 a {color: red; text-decoration: none;}
 a:hover{color: red; text-decoration: underline;}
 
-.container {border: black 2px solid; background-color: white; margin-top: 4rem; padding-bottom: 1.5rem; box-shadow: 5px 5px 10px 3px;}
+.header, .content, .links {margin: auto; text-align: center;}
+.header {font-size: 200%; max-width: 40vw;}
 
-.topSpaceL {margin-top: 20px;}
-.topSpaceXL {margin-top: 30px;}
-.topSpaceXXL {margin-top: 50px;}
+.content, .links {font-size: 130%;}
 
-.display-1 {border-bottom: black 2px solid;}
 
-/* Ending of Global Styles */
+
+
 
 
