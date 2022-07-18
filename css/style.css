@@ -1,13 +1,24 @@
 
 body {background-color: #b2b2b2; color: black; font-family: 'Open Sans', sans-serif; margin-top: 30px;}
 
-.container {background-color: white; padding: 15px 75px 15px 75px; box-shadow: 5px 5px 10px 7px; width: 60vw; margin: auto;}
+.container {background-color: white; 
+    padding: 15px 1rem 15px 1rem; 
+    box-shadow: 5px 5px 10px 7px; 
+    max-width: 60vw; 
+    margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100vw;
+    }
+}
 
 a {color: red; text-decoration: none;}
 a:hover{color: red; text-decoration: underline;}
 
 .header, .content, .links {margin: auto; text-align: center;}
-.header {font-size: 200%; max-width: 40vw;}
+.header {font-size: 200%;}
 
 .content, .links {font-size: 130%;}
 
