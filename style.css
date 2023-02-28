@@ -1,29 +1,90 @@
-
-body {background-color: #b2b2b2; color: black; font-family: 'Open Sans', sans-serif; margin-top: 30px;}
-
-.container {background-color: white; 
-    padding: 15px 1rem 15px 1rem; 
-    box-shadow: 5px 5px 10px 7px; 
-    max-width: 60vw; 
-    margin: auto;
+:root {
+	--darkgrey: #242424;
+	--lightgrey: #424242;
 }
 
-@media screen and (max-width: 480px) {
-    .container {
-        max-width: 100vw;
-    }
+* {margin: 0;}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	background-color: var(--darkgrey);
+}
+	
+.fa-cat	{
+	color: white !important;
+	display: flex-inline !important;
+	align-items: center !important;
 }
 
-a {color: red; text-decoration: none;}
-a:hover{color: red; text-decoration: underline;}
+.splitBackground {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75%;
+	background-color: var(--lightgrey);
+}
 
-.header, .content, .links {margin: auto; text-align: center;}
-.header {font-size: 200%;}
+.navBar {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	background-color: var(--darkgrey);
+	border-bottom: 2px solid var(--darkgrey);
+	padding: .25rem;
+}
+.navLink {
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+.navLink:hover {
+	background-color: var(--lightgrey);
+}
 
-.content, .links {font-size: 130%;}
+.row {
+	display: flex;
+	flex-direction: row;
+	max-width: 90%;
+	margin: 1.5rem auto;
+	background-color: #636363;
+	border-radius: 25px;
+}
+.cardRow {
+	justify-content: space-evenly;
+	}
 
+h1.welcomeTag	{
+	padding: 1rem 2rem 1rem 2rem;
+	max-width: 100%;
+	color: white;
+}
 
+.projectCard {
+	padding: 20px 15px 20px 15px;
+	margin: .5rem .5rem .5rem .5rem;
+	max-width: 33%;
+	background-color: var(--darkgrey);
+	border-radius: 25px;
+}
+.cardTitle {
+	color: white;
+	font-weight: 500;
+}
 
-
-
-
+/* Responsive MQs */
+@media screen and (max-width: 600px) {
+	.navBar {
+		flex-direction: column;
+		}
+	.navLink {
+		padding: .5rem .75rem .5rem .75rem;
+	}
+	.row {flex-direction: column;}
+	.projectCard {max-width: 100%;}
+	h1.welcomeTag {max-width: 100%;}
+}
