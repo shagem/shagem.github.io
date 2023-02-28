@@ -8,6 +8,8 @@
 
 * {margin: 0;}
 
+span {display: block;}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -53,7 +55,7 @@ body {
 .container {
     max-width: 100%;
     margin: 0 0 1.5rem 0;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 3rem 1rem 3rem;
     background-color: var(--mediumGrey);
 }
 
@@ -82,9 +84,33 @@ a.mainLink:hover {
     color: var(--accentGreen);
 }
 
+.projectCardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 1rem 1rem;
+    padding: 10px 20px;
+}
+.projectCard {
+    background-color: var(--lightGrey);
+    max-width: 32%;
+    text-align: center;
+    border-radius: 25px;
+    padding: .75rem 2rem;
+    box-shadow: 3px 3px 7px var(--darkGrey);
+    margin: 0 .5rem;
+}
+h2.projectCardTitle {
+    color: var(--textColor);
+    font-weight: 500;
+}
+
 /* Responsive MQs */
 @media screen and (max-width: 600px) {
     .splitBackground {height: 100%;}
 	.navBar {flex-direction: column;}
 	.navLink {padding: .5rem .75rem .5rem .75rem;}
+    .projectCardRow {flex-direction: column;}
+    .projectCard {max-width: 100%; margin: .75rem 0;}
 }
