@@ -74,7 +74,7 @@ h1.headerTag {
 p.mainText {
     color: var(--textColor);
     font-weight: 300;
-    margin: .5rem 0 .5rem 0;
+    margin: .5rem 0 .75rem 0;
 }
 a.mainLink, a.mainLink:visited {
     color: var(--textColor);
