@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -62,9 +62,6 @@ body {
     background-color: var(--lightGrey);
     border-radius: 25px;
     box-shadow: 3px 3px 7px var(--darkGrey);
-}
-.accentRow {
-    border-top: 2px solid var(--accentGreen)
 }
 
 h1.headerTag {
@@ -85,7 +82,7 @@ a.mainLink:hover {
 
 /* Responsive MQs */
 @media screen and (max-width: 600px) {
-    .splitBackground {height: 95%;}
+    .splitBackground {height: 100%;}
 	.navBar {flex-direction: column;}
 	.navLink {padding: .5rem .75rem .5rem .75rem;}
 }
