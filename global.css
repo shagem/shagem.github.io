@@ -70,7 +70,7 @@ body {
     box-shadow: 3px 3px 7px var(--darkGrey);
 }
 
-h1.headerTag {
+h1.headerTag, h2.cardTitle {
     color: var(--textColor);
     font-weight: 500;
 }
@@ -102,10 +102,6 @@ a.mainLink:hover {
     padding: .75rem 2rem;
     box-shadow: 3px 3px 7px var(--darkGrey);
     margin: 0 .5rem;
-}
-h2.cardTitle {
-    color: var(--textColor);
-    font-weight: 500;
 }
 p.cardText {
     color: var(--textColor);
