@@ -86,7 +86,7 @@ a.mainLink:hover {
     color: var(--accentGreen);
 }
 
-.projectCardRow {
+.cardRow {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -94,7 +94,7 @@ a.mainLink:hover {
     margin: 1rem 1rem;
     padding: 10px 20px;
 }
-.projectCard {
+.card {
     background-color: var(--lightGrey);
     max-width: 32%;
     text-align: center;
@@ -103,17 +103,16 @@ a.mainLink:hover {
     box-shadow: 3px 3px 7px var(--darkGrey);
     margin: 0 .5rem;
 }
-h2.projectCardTitle {
+h2.cardTitle {
     color: var(--textColor);
     font-weight: 500;
 }
-
-/* Responsive MQs */
-@media screen and (max-width: 600px) {
-	.navBar {flex-direction: column;}
-	.navLink {padding: .5rem .75rem .5rem .75rem; border: none;}
-    .navLink:hover {border: 2px solid var(--darkGrey);}
-    .container {padding: 1rem .25rem;}
-    .projectCardRow {flex-direction: column;}
-    .projectCard {max-width: 100%; margin: .75rem 0;}
+p.cardText {
+    color: var(--textColor);
+    font-weight: 300;
+    text-align: left;
+    padding: .5rem 0;
 }
+
+
+
