@@ -8,8 +8,6 @@
 
 * {margin: 0;}
 
-span {display: block;}
-
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -21,15 +19,6 @@ body {
 	color: var(--textColor) !important;
 	display: flex-inline !important;
 	align-items: center !important;
-}
-
-.splitBackground {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 75%;
-	background-color: var(--mediumGrey);
 }
 
 .navBar {
@@ -50,6 +39,19 @@ body {
 .navLink:hover {
 	background-color: var(--mediumGrey);
     color: var(--accentGreen);
+    border-left: 1px solid var(--darkGrey);
+    border-right: 1px solid var(--darkGrey);
+}
+
+.activeLink {
+    padding: 1rem;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.2rem;
+    background-color: var(--mediumGrey);
+    color: var(--accentGreen);
+    border-left: 1px solid var(--darkGrey);
+    border-right: 1px solid var(--darkGrey);
 }
 
 .container {
@@ -108,9 +110,10 @@ h2.projectCardTitle {
 
 /* Responsive MQs */
 @media screen and (max-width: 600px) {
-    .splitBackground {height: 100%;}
 	.navBar {flex-direction: column;}
-	.navLink {padding: .5rem .75rem .5rem .75rem;}
+	.navLink {padding: .5rem .75rem .5rem .75rem; border: none;}
+    .navLink:hover {border: 2px solid var(--darkGrey);}
+    .container {padding: 1rem .25rem;}
     .projectCardRow {flex-direction: column;}
     .projectCard {max-width: 100%; margin: .75rem 0;}
 }
