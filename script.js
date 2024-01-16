@@ -1,36 +1,40 @@
 //Initialize variables
 let pageBody = document.querySelector('body');
-let navbar = document.createElement('section');
-let homeLink = document.createElement('a');
-let homeImg = document.createElement('img');
-let emailLink = document.createElement('a');
-let emailImg = document.createElement('img');
-let githubLink = document.createElement('a');
-let githubImg = document.createElement('img');
+let navbarWrapper = document.createElement('section');
 let container = document.createElement('section');
 let content = document.createElement('div');
 let title = document.createElement('h1');
 let info = document.createElement('p');
 
+let navbar = {
+    homeLink : document.createElement('a'),
+    emailLink : document.createElement('a'),
+    githubLink : document.createElement('a'),
+    homeImg : document.createElement('img'),
+    emailImg : document.createElement('img'),
+    githubImg : document.createElement('img')
+}
+
 //Append navbar
-pageBody.appendChild(navbar);
-navbar.appendChild(githubLink);
-navbar.appendChild(emailLink);
-navbar.appendChild(homeLink);
+pageBody.appendChild(navbarWrapper);
+navbarWrapper.appendChild(navbar.githubLink);
+navbarWrapper.appendChild(navbar.emailLink);
+navbarWrapper.appendChild(navbar.homeLink);
 
 //Append links to navbar
-githubLink.appendChild(githubImg);
-emailLink.appendChild(emailImg);
-homeLink.appendChild(homeImg);
+navbar.githubLink.appendChild(navbar.githubImg);
+navbar.emailLink.appendChild(navbar.emailImg);
+navbar.homeLink.appendChild(navbar.homeImg);
 
-//Style navbar links
-githubLink.href = 'https://github.com/shagem';
-githubImg.src = './imgs/github.svg';
-homeLink.id = 'logo';
-emailLink.href = 'mailto:seanhagemanweb@gmail.com';
-emailImg.src = './imgs/gmail.svg';
-homeLink.href = 'index.htm';
-homeImg.src = './imgs/logo.svg';
+//Style navbar
+navbarWrapper.classList = 'navbar';
+navbar.githubLink.href = 'https://github.com/shagem';
+navbar.githubImg.src = './imgs/github.svg';
+navbar.homeLink.id = 'logo';
+navbar.emailLink.href = 'mailto:seanhagemanweb@gmail.com';
+navbar.emailImg.src = './imgs/gmail.svg';
+navbar.homeLink.href = 'index.htm';
+navbar.homeImg.src = './imgs/logo.svg';
 
 //Append content to main container
 pageBody.appendChild(container);
@@ -38,13 +42,12 @@ container.appendChild(content);
 content.appendChild(title);
 content.appendChild(info);
 
-//Add styles
-navbar.classList = 'navbar';
+//Style content
 container.classList = 'container';
 content.id = 'content';
 title.id = 'page-title';
 info.id = 'info';
 
-//Adds HTML
+//Adds HTML text
 title.innerText = 'Welcome.';
 info.innerText = 'My name is Sean Hageman, and this is the beginning of something amazing.';
