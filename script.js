@@ -3,6 +3,8 @@ let pageBody = document.querySelector('body');
 
 generateNavbar();
 generateContent();
+generateProjects();
+generateFooter();
 
 function generateNavbar() {
 let navbarWrapper = document.createElement('section');
@@ -60,4 +62,20 @@ content.info.id = 'info';
 //Adds HTML text
 content.title.innerText = 'Welcome.';
 content.info.innerText = 'My name is Sean Hageman, and this is the beginning of something amazing.';
+}
+
+function generateProjects() {
+    let projectsWrapper = document.createElement('section');
+    let projects = {
+        title : document.createElement('h1'),
+        
+    }
+    pageBody.appendChild(projectsWrapper);
+    
+}
+
+function generateFooter() {
+    let footerWrapper = document.createElement('footer');
+    pageBody.appendChild(footerWrapper);
+    footerWrapper.innerHTML = '<p>©2024 seanhageman.com</p>';
 }
