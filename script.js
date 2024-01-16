@@ -1,11 +1,11 @@
 //Initialize variables
 let pageBody = document.querySelector('body');
-let navbarWrapper = document.createElement('section');
-let container = document.createElement('section');
-let content = document.createElement('div');
-let title = document.createElement('h1');
-let info = document.createElement('p');
 
+generateNavbar();
+generateContent();
+
+function generateNavbar() {
+let navbarWrapper = document.createElement('section');
 let navbar = {
     homeLink : document.createElement('a'),
     emailLink : document.createElement('a'),
@@ -35,19 +35,29 @@ navbar.emailLink.href = 'mailto:seanhagemanweb@gmail.com';
 navbar.emailImg.src = './imgs/gmail.svg';
 navbar.homeLink.href = 'index.htm';
 navbar.homeImg.src = './imgs/logo.svg';
+}
+
+function generateContent() {
+let container = document.createElement('section');
+let contentWrapper = document.createElement('div');
+let content = {
+    title : document.createElement('h1'),
+    info : document.createElement('p')
+}
 
 //Append content to main container
 pageBody.appendChild(container);
-container.appendChild(content);
-content.appendChild(title);
-content.appendChild(info);
+container.appendChild(contentWrapper);
+contentWrapper.appendChild(content.title);
+contentWrapper.appendChild(content.info);
 
 //Style content
 container.classList = 'container';
-content.id = 'content';
-title.id = 'page-title';
-info.id = 'info';
+contentWrapper.id = 'content';
+content.title.id = 'page-title';
+content.info.id = 'info';
 
 //Adds HTML text
-title.innerText = 'Welcome.';
-info.innerText = 'My name is Sean Hageman, and this is the beginning of something amazing.';
+content.title.innerText = 'Welcome.';
+content.info.innerText = 'My name is Sean Hageman, and this is the beginning of something amazing.';
+}
