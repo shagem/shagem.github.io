@@ -2,17 +2,41 @@
     --black: #111;
     --grey: #444;
     --lightGrey: #777;
-    --white: #f3f3f3;
+    --white: #F3F3F3;
+    --red: #FF0000;
+    --blue: #139DF2;
+    --yellow: #FFE600;
+    --orange: #FF8700;
+    --green: #0BE316;
+    --purple: #BE0AFF;
 }
 
 * {margin: 0; padding: 0;}
 
-body {font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 1rem; color: var(--white); background-color: var(--black);}
+body {
+    font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 1rem;
+    color: var(--black);
+    background: var(--white);;
+}
 
-.navbar {display: flex; flex-direction: row-reverse; max-width: 100%; background-color: ;}
-.navbar a {}
+.navbar {
+    display: flex; flex-direction: row-reverse; max-width: 100%; align-items: center;
+    padding: 1rem 0;
+    border-image: linear-gradient(to left, var(--red), var(--blue)) 30;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    background: var(--black);
+    color: var(--white);
+}
+#welcome {display: none;}
+.navbar a {margin: 0 1rem; cursor: pointer;}
 
-.container {}
+.container {display: flex; flex-direction: column;}
+#header, #content, #projects {display: flex; flex-direction: row;}
 #header {}
 #content {}
 #projects {}
+
+@media screen and (min-width: 800px) {
+    #welcome {display: block; margin: 0 auto 0 1rem; font-size: 3rem;}
+}
