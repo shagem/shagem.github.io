@@ -26,7 +26,7 @@ body {
     padding: 1rem .75rem;
     color: var(--white);
 }
-#logo {margin: 0 auto 0 0;}
+#logo {margin: 0 auto 0 0; display: ;}
 .navbar a {cursor: pointer;}
 
 .container {
@@ -37,7 +37,7 @@ body {
 #header {}
 
 #content {padding: 3rem .75rem 0 .75rem;}
-#welcome {font-size: 3rem; font-weight: 100;}
+#page-title {font-size: 3rem; font-weight: 100;}
 #info {
     margin: 2rem 0 0 1rem;
     padding: 0 0 0 1rem;
