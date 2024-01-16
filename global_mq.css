@@ -1,7 +1,0 @@
-/* Global MQ Source */
-@media screen and (max-width: 850px) {
-    .cardRow {flex-direction: column;}
-    .card {max-width: 100%; margin: .75rem 0;}
-    .container {padding: 1rem .25rem;}
-    .navBar {justify-content: center;}
-}
