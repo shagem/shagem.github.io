@@ -12,7 +12,7 @@ generateFooter();
 //Creates Navbar
 function generateNavbar() {
     const navbarWrapper = document.createElement('section');
-    let navbar = {
+    const navbar = {
         homeLink : document.createElement('a'),
         emailLink : document.createElement('a'),
         githubLink : document.createElement('a'),
@@ -43,12 +43,11 @@ function generateNavbar() {
 //Creates Home Content
 function generateContent() {
     const contentWrapper = document.createElement('div');
-    let content = {
+    const content = {
         title : document.createElement('h1'),
         info : document.createElement('div')
 }
 //Append content to main container
-    pageBody.appendChild(container);
     container.appendChild(contentWrapper);
     contentWrapper.appendChild(content.title);
     contentWrapper.appendChild(content.info);
@@ -66,7 +65,7 @@ function generateContent() {
 //Creates Projects
 function generateProjects() {
     const projectsWrapper = document.createElement('div');
-    let projects = {
+    const projects = {
         title : document.createElement('h2'),
         weatherApp : document.createElement('h3'),
         exampleApp : document.createElement('h3')
@@ -90,7 +89,7 @@ function generateProjects() {
 }
 
 function generateFooter() {
-    let footerWrapper = document.createElement('footer');
+    const footerWrapper = document.createElement('footer');
     pageBody.appendChild(footerWrapper);
     footerWrapper.innerHTML = '<p>©2024 seanhageman.com</p>';
 }
