@@ -3,7 +3,7 @@
     --charcoal: #222;
     --grey: #444;
     --lightGrey: #777;
-    --white: #F3F3F3;
+    --white: #F4F3F3;
     --red: #FF0000;
     --blue: #139DF2;
     --yellow: #FFE600;
@@ -15,7 +15,7 @@
 * {margin: 0; padding: 0;}
 
 body {
-    font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 1.15rem;
+    font-family: 'Kumbh Sans', sans-serif; font-weight: 200; font-size: 1.15rem;
     color: var(--white);
     background: var(--charcoal);;
 }
@@ -36,17 +36,27 @@ body {
 
 #header {}
 
-#content {padding: 3rem .75rem 0 .75rem;}
-#page-title {font-size: 3rem; font-weight: 100;}
+#content {margin: 1.5rem 0 0 0;}
+#page-title {font-size: 4rem; font-weight: 200; margin: 0 0 0 1.5rem;}
 #info {
-    margin: 2rem 0 0 1rem;
-    padding: 0 0 0 1rem;
-    border-left: 3px solid;
+    margin: 2rem 0 0 1.5rem; padding: 0 2rem 0 1rem;
+    border-left: 1px solid;
     border-image: linear-gradient(to bottom, var(--red), var(--blue));
     border-image-slice: 1;
 }
+#info p {margin: .75rem 0;}
 
-#projects {}
+#projects {margin: 3rem auto 0 1.5rem;}
+#projects-title {font-size: 2rem; font-weight: 200;}
+#projects-item {
+    width: fit-content;
+    margin: 1rem 0 0 1rem;
+    font-size: 1.25rem; font-weight: 200;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, var(--red), var(--blue));
+    border-image-slice: 1;
+    cursor: pointer;
+}
 
 footer {
     position: fixed; bottom: 0; left: 0; z-index: 1000; width: 100%;
@@ -62,6 +72,13 @@ footer p:hover {
     cursor: default;
 }
 
-@media screen and (min-width: 800px) {
-    
+
+
+
+
+
+
+/* Responvie Design coming soon... */
+@media screen and (min-width: 900px) {
+    .container {max-width: 90%; margin: auto;}
 }
