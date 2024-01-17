@@ -1,8 +1,12 @@
-//Initialize pageBody and container
+//Initialize pageBody and container and content
 const pageBody = document.querySelector('body');
 generateNavbar();
 const container = document.createElement('section');
+container.classList = 'container';
 pageBody.appendChild(container);
+const contentWrapper = document.createElement('div');
+contentWrapper.id = 'content';
+
 
 
 generateContent();
@@ -19,7 +23,7 @@ function generateNavbar() {
         homeIcon : document.createElement('img'),
         emailIcon : document.createElement('img'),
         githubIcon : document.createElement('img')
-}
+    };
 //Append navbar
     pageBody.appendChild(navbarWrapper);
     navbarWrapper.appendChild(navbar.githubLink);
@@ -36,30 +40,32 @@ function generateNavbar() {
     navbar.homeLink.id = 'logo';
     navbar.emailLink.href = 'mailto:seanhagemanweb@gmail.com';
     navbar.emailIcon.src = './imgs/gmail.svg';
-    navbar.homeLink.href = 'index.htm';
     navbar.homeIcon.src = './imgs/logo.svg';
-}
+    navbar.homeLink.addEventListener('click', function(event) {
+        generateContent();
+        event.preventDefault();
+    });
+};
 
 //Creates Home Content
 function generateContent() {
-    const contentWrapper = document.createElement('div');
     const content = {
         title : document.createElement('h1'),
         info : document.createElement('div')
-}
+    };
 //Append content to main container
+    container.innerHTML = '';
     container.appendChild(contentWrapper);
+    contentWrapper.innerHTML = '';
     contentWrapper.appendChild(content.title);
     contentWrapper.appendChild(content.info);
 //Style content
-    container.classList = 'container';
-    contentWrapper.id = 'content';
     content.title.id = 'page-title';
     content.info.id = 'info';
 //Adds HTML text
     content.title.innerText = 'Welcome.';
-    content.info.innerHTML = '<p>My name is Sean Hageman and I create fun things in my free time.</p>';
-}
+    content.info.innerHTML = '<p>My name is Sean Hageman and I create web apps in my free time.</p>';
+};
 
 
 //Creates Projects
@@ -69,9 +75,9 @@ function generateProjects() {
         title : document.createElement('h2'),
         weatherApp : document.createElement('h3'),
         exampleApp : document.createElement('h3')
-    }
+    };
 //Append content to main container
-    container.appendChild(projectsWrapper);
+    pageBody.appendChild(projectsWrapper);
     projectsWrapper.appendChild(projects.title);
     projectsWrapper.appendChild(projects.weatherApp);
     projectsWrapper.appendChild(projects.exampleApp);
@@ -86,20 +92,33 @@ function generateProjects() {
     projects.exampleApp.innerHTML = 'Example Application';
     projects.weatherApp.addEventListener('click', weatherAppOverview);
     projects.exampleApp.addEventListener('click', exampleAppOverview);
-}
+};
 
 function generateFooter() {
     const footerWrapper = document.createElement('footer');
     pageBody.appendChild(footerWrapper);
     footerWrapper.innerHTML = '<p>©2024 seanhageman.com</p>';
-}
+};
+
+function animateContentRemoval() {
+    document.querySelector('.container').classList.toggle('hide');
+    setTimeout(function(){
+    container.innerHTML = '';
+    }, 1450);
+};
 
 function weatherAppOverview() {
-    container.innerHTML = '';
-    generateProjects();
-    
+    animateContentRemoval();
+    const weatherApp = {
+        name : document.createElement('h2'),
+        overview : ''
+    }
+    container.appendChild(contentWrapper);
+    content.appendChild(weatherApp.name);
+    weatherApp.name.id = 'projects-title';
 };
 
 function exampleAppOverview() {
-    console.log('Success!');
+    animateContentRemoval();
+
 };
