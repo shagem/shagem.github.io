@@ -7,7 +7,7 @@ content.id = 'content';
 
 //On DOM Load begin generating layout
 document.addEventListener('DOMContentLoaded', function() {
-    generateNavbarFooter();
+    generateNavbar();
     pageBody.appendChild(wrapper);
     wrapper.appendChild(content);
     generateHomeContent();
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 
-//Creates Navbar and Footer
-function generateNavbarFooter() {
+//Creates Navbar
+function generateNavbar() {
     const navbar = document.createElement('header');
     const navbarData = {
         homeLink : document.createElement('a'),
@@ -43,7 +43,7 @@ function generateNavbarFooter() {
     navbarData.emailLink.href = 'mailto:seanhagemanweb@gmail.com';
     navbarData.emailIcon.src = './imgs/gmail.svg';
     navbarData.homeIcon.src = './imgs/logo.svg';
-    navbarData.homeLink.href = './index.htm';
+    navbarData.homeLink.href = './';
     
     
 };
@@ -94,6 +94,7 @@ function generateProjects() {
     projectsData.title.innerText = 'Projects';
     projectsData.weatherApp.innerHTML = 'Weather Tracker';
     projectsData.exampleApp.innerHTML = 'Example Application';
+//Adds click event, handles transition, generates weather app content
     projectsData.weatherApp.addEventListener('click', function(){
         wrapper.classList.add('slideOut');
         setTimeout(function() {
@@ -110,6 +111,7 @@ function generateProjects() {
             }, 0500);
         }, 0500);
     });
+//Adds click event, handles transition, generates example content
     projectsData.exampleApp.addEventListener('click', function(){
         wrapper.classList.add('slideOut');
         setTimeout(function() {
