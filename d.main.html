@@ -15,8 +15,9 @@
     
 body {font-family: 'Kumbh Sans', sans-serif; color: var(--black); font-weight: 300;}
 
+/* Navbar Styles */
 .navbar {
-    display: flex; flex-flow: row nowrap; align-items: center;
+    display: flex; flex-flow: row wrap; align-items: center;
     column-gap: 25px; padding: 2rem 1.5rem;
     background: var(--doyleBlue);
 }
@@ -27,58 +28,69 @@ body {font-family: 'Kumbh Sans', sans-serif; color: var(--black); font-weight: 3
 }
 .navLink:hover {
     cursor: pointer; 
-    color: var(--doyleGold); fill: var(--doyleGold);
+    color: var(--doyleGold);
 }
+#navLogo:hover {fill: var(--doyleGold)}
 .navSplit {margin: 0 0 0 auto;}
-#navDropdown {display: none;}
+#navDropdown {display: none; color: var(--white); font-size: 1.25rem;}
+.active {display: inline !important;}
     
-.wrapper {max-width: 70%; margin: auto;}
+    
+/* Main Content Styles */
+.wrapper {
+    max-width: 70%; margin: auto; 
+    display: flex; flex-direction: column;
+}
 .wrapperHeading {
     color: var(--doyleBlue); margin: 1rem 0 0 0;
     font-size: 2.5rem;
 }
 
+/* Small Screens */
 @media screen and (max-width: 800px) {
     .navbar {flex-direction: column; padding: 0 0 0 0;}
-    .navLink {padding: .25rem 0 .25rem 0;}
+    .navLink {padding: 1rem;}
     .navSplit {margin: 0;}
-    #navDropdown {display: block; padding: .5rem 0;}
-    #navProductsLink, #navHomeLink, #navLoginLink, #navFTPLink, #navContactLink {display: none;}
-    .active {display: inline !important;}
+    #navDropdown {display: inline; padding: 1rem;}
+    .navLink {display: none;}
+    
     
     .wrapper {max-width: 100%;}
-    .wrapperHeading {padding: 1rem 1rem;}
+    .wrapperHeading {padding: 0;}
 }    
 
 </style>
-    
 </head>
-<body>
 
+<body>
+<!--- HTML --->
 
 <nav class='navbar'>
-<a class='navLink' id='navDropdown'>&#9776;</a>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class='navLink' fill=var(--white) width="50" height="47" id='navHomeLink'>
+<a id='navDropdown'>&#9776;</a>
+<a class='navLink' id='navHomeLink'>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" fill=var(--white) width="50" height="47" id='navLogo'>
 <path d="m48.7,12.8c-0.9,-0.7 -1.6,-1.2 -3.3,-1.2l-8.6,0l0,0l-8.8,0l0,-11.6l-5.3,3.8l0,7.8l-8.7,0l-0.4,0l-6.7,0l0,0l-6.9,5.5l0,14c0,1.5 0.6,2 1.3,2.9c0.9,0.7 1.6,1.2 3.4,1.2l9,0l0.3,0l8.7,0l0,12l5.3,-3.8l0,-8.1l8.6,0l0.1,0l6.4,0l0,0l6.7,-5.6l0,-14c0.2,-1.5 -0.4,-2.1 -1.1,-2.9zm-34.7,18.3l-0.4,0l-9,0l0,-15.3l9,0l0.4,0l8.7,0l0,15.3l-8.7,0zm31.5,0l-8.7,0l0,0l-8.8,0l0,-15.3l8.6,0l0,0l8.8,0l0,15.3l0.1,0z"/>
 </svg>
+</a>
 <a class='navLink' id='navProductsLink'>Products / Services</a>
 <a class='navLink' id='navLoginLink'>Login</a>
 <a class='navLink navSplit' id='navFTPLink' href='https://upload.doyleprint.com/WebInterface/login.html' target='_blank'>Quick FTP</a>
 <a class='navLink' id='navContactLink'>Contact</a>
 </nav>
 
-<div class='wrapper'>
-<h1 class='wrapperHeading'>Doyle Printing & Communications</h1>
-</div>
 
 
+<!--- JS --->
 <script>
 //Mobile Drop Menu
-let dropdown = document.getElementById("navDropdown");
+const dropdown = document.getElementById("navDropdown");
 dropdown.addEventListener("click", function() {
-homeLink = document.getElementById("navHomeLink");
-homeLink.innerText = 'Home';
-homeLink.classList.toggle("active");
+document.getElementById("navHomeLink").innerText = 'Home';
+document.getElementById("navHomeLink").classList.toggle("active");
+document.getElementById("navProductsLink").classList.toggle("active");
+document.getElementById("navLoginLink").classList.toggle("active");
+document.getElementById("navFTPLink").classList.toggle("active");
+document.getElementById("navContactLink").classList.toggle("active");
 dropdown.classList.toggle("active");
 });
 </script>
