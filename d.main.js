@@ -1,4 +1,4 @@
-let mainContent = document.getElementById('maincontent');
+let mainContent = document.getElementById('wrapper');
 
 fetch('https://seanhageman.com/d.main.html')
 .then(response => response.text())
