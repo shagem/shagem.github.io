@@ -7,6 +7,6 @@ function fetchHtml() {
   })
   .then((html) => {
     mainContent.innerHTML = html;
-    console.log('Success')!
+    console.log('Success');
   });
 }
