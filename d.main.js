@@ -1,7 +1,7 @@
 let mainContent = document.getElementById('maincontent');
 
 function fetchHtml() {
-  fetch('./file.html')
+  fetch('https://seanhageman.com/d.main.html')
   .then((response) => {
     return response.text();
   })
