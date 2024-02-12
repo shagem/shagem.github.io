@@ -1,4 +1,11 @@
-let mainContent = document.querySelector('#maincontent');
-let heading = document.createElement('h1');
-mainContent.append(heading);
-heading.innerText = 'test';
+let mainContent = document.getElementById('maincontent');
+
+function fetchHtml() {
+  fetch('./file.html')
+  .then((response) => {
+    return response.text();
+  })
+  .then((html) => {
+    maincontent.innerHTML = html     
+  });
+}
