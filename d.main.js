@@ -1,11 +1,10 @@
 let mainContent = document.getElementById('maincontent');
 
-function fetchHtml() {
-  fetch('https://seanhageman.com/d.main.html')
-  .then((response) => {
-    return response.text();
-  })
-  .then((html) => {
-    maincontent.innerHTML = html     
-  });
+async function fetchMyDocument() {      
+  try {
+    let response = await fetch('https://seanhageman.com/d.main.html'); // Gets a promise
+    mainContent.innerHTML = await response.text(); // Replaces body with response
+  } catch (err) {
+    console.log('Fetch error:' + err); // Error handling
+  }
 }
