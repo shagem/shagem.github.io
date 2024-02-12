@@ -1,2 +1,3 @@
-#wrapper {margin: auto; max-width: 100%; background-color: red !important;}
+#wrapper {margin: auto; max-width: 100%;}
+#maincontent {width: 100%; padding: 0;}
 br {display: none !important;}
