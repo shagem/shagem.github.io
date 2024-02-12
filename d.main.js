@@ -1,4 +1,4 @@
-let body = document.querySelector('body');
+let body = document.querySelector('html');
 
 fetch('https://seanhageman.com/d.main.html')
 .then(response => response.text())
