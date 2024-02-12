@@ -1,9 +1,9 @@
-let mainContent = document.getElementById('wrapper');
+let body = document.querySelector('body');
 
 fetch('https://seanhageman.com/d.main.html')
 .then(response => response.text())
 .then(function(response) {
-    mainContent.innerHTML = response;
+    body.innerHTML = response;
     })
 .catch(err => console.error(err)
 );

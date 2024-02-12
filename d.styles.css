@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;700&display=swap');
+:root {
+    --doyleBlue: #003882;
+    --white: #f3f3f3;
+    --black: #111;
+}
+    
+* {padding: 0; margin: 0;}
+    
 #wrapper {margin: auto; max-width: 100%;}
-#maincontent {width: 100%; padding: 0;}
-br {display: none !important;}
+
+.navbar {
+    display: flex; flex-flow: row nowrap;
+    column-gap: 25px; padding: 3rem 2.5rem;
+    background: var(--doyleBlue);
+}
+.navLink {
+    color: var(--white); text-align: center; 
+    font-family: 'Kumbh Sans', sans-serif; font-weight: 500;
+    font-size: 1.25rem;
+}
+.navLink:hover {cursor: pointer; text-decoration: underline;}
+.navSplit {margin: 0 0 0 auto;}
