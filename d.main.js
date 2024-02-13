@@ -1,4 +1,4 @@
-
+// Doyle Rocket Quotes JS, Handles custom events.
 
 
 
@@ -11,5 +11,4 @@ dropdown.addEventListener('click', function(){
     document.getElementById('navLoginLink').classList.toggle('active');
     document.getElementById('navFTPLink').classList.toggle('active');
     document.getElementById('navContactLink').classList.toggle('active');
-    console.log('success!');
 });
