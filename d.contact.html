@@ -59,63 +59,10 @@ img {max-width: 100%;}
     display: flex; flex-direction: column;
     align-items: center;
 }
-    
-.servicesGrid {
-    max-width: 55%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        'offset digital'
-        'bindery mailservices';
-    grid-gap: 5px;
-    margin: 2rem 0;
-}
-.offsetGridItem, .digitalGridItem, .binderyGridItem, .mailGridItem {
-    display: inline-block; position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 300px; padding: 1rem;
-}
-.offsetGridItem:before, .digitalGridItem:before, .binderyGridItem:before, .mailGridItem:before {
-    content: "";
-    display: block; position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    background: rgba(0, 0, 0, 0.55);
-    transition: all .2s linear;
-}
-.offsetGridItem:hover:before, .digitalGridItem:hover:before, .binderyGridItem:hover:before, .mailGridItem:hover:before {
-    background: rgba(0, 0, 0, 0.25);
-}
-    
-.offsetGridItem {
-    grid-area: offset; 
-    background-image: url('https://seanhageman.com/d.imgs/Offset.jpeg');
-}
-.digitalGridItem {
-    grid-area: digital;
-    background-image: url('https://seanhageman.com/d.imgs/VersaFire.jpeg');
-}
-.binderyGridItem {
-    grid-area: bindery;
-    background-image: url('https://seanhageman.com/d.imgs/Bindery.jpeg');
-}
-.mailGridItem {
-    grid-area: mailservices;
-    background-image: url('https://seanhageman.com/d.imgs/Mailtruck.jpeg');
-}
-
-.gridItemTitle, .gridItemInfo {position: relative; color: var(--white); text-align: center; top: 30%; cursor: default;}
-.gridItemTitle {font-size: 2rem;}
-.gridItemInfo {font-size: 1.25rem;}
-    
-    
-    
+      
 /* Responsive MQs */
 @media screen and (max-width: 1400px) {
-    .gridItemTitle {font-size: 1.6rem;}
-    .gridItemInfo {font-size: 1.1rem;}
+    
 }
     
 @media screen and (max-width: 800px) {
@@ -127,15 +74,7 @@ img {max-width: 100%;}
     .navLink {display: none;}
     
     /* Main Content Styles */
-    .servicesGrid {
-    max-width: 90%; margin: 1rem 0;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        'offset'
-        'digital'
-        'bindery'
-        'mailservices';
-    }
+    
 }    
 
 </style>
@@ -168,25 +107,13 @@ img {max-width: 100%;}
 </section>
     
 <section class='transWrapper'>
-    <div class='servicesGrid'>
-        <div class='offsetGridItem'>
-            <h3 class='gridItemTitle'>Offset Printing</h3>
-            <p class='gridItemInfo'>One to six color printing, business cards to books.  Twelve presses available to produce your final product.</p>
-        </div>
-        <div class='digitalGridItem'>
-            <h3 class='gridItemTitle'>Digital Printing</h3>
-            <p class='gridItemInfo'>High-performance four and five-color digital printing systems tailored for the commercial sector.</p>
-        </div>
-        <div class='binderyGridItem'>
-            <h3 class='gridItemTitle'>Bindery &amp; Letterpress</h3>
-            <p class='gridItemInfo'>Saddle stitching, folding, drilling, scoring and perfing (for easy in tearing off tickets and specilized forms).</p>
-        </div>
-        <div class='mailGridItem'>
-            <h3 class='gridItemTitle'>Full Service Mailshop</h3>
-            <p class='gridItemInfo'>Direct mail services, fufillment, and a fleet of delivery trucks for prompt pick-ups &amp; delivery.</p>
-        </div>
+    <div class=''>
+    
     </div>
 </section>
 
 <script src='./d.main.js'></script>
 </body>
+
+
+
