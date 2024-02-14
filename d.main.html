@@ -61,7 +61,8 @@ img {max-width: 100%;}
     margin: 2rem; text-align: center;
     row-gap: 5px;
 }  
-.welcomeWrapper p {}    
+.welcomeWrapper a {color: var(--doyleBlue);}
+.welcomeWrapper a:hover {color: var(--doyleGold);}
     
 .transWrapper {
     max-width: 100%; margin: 1rem auto; 
@@ -76,6 +77,7 @@ img {max-width: 100%;}
 }
 .productsList h3 {color: var(--white); margin: 0 0 1rem 0; font-size: 1.5rem; border-bottom: 1.5px solid var(--white);}
 .productsList li {padding: 4px 0; color: var(--white); font-size: 1rem; cursor: pointer; width: fit-content;}
+.productsList li:hover {text-decoration: underline;}
     
 .servicesGrid {
     max-width: 55%;
@@ -126,7 +128,11 @@ img {max-width: 100%;}
 .gridItemTitle {font-size: 2rem;}
 .gridItemInfo {font-size: 1.25rem;}
     
-
+footer {
+    position: fixed; font-size: 14px;
+    bottom: 0; left: 0; width: 100%; text-align: center;
+    margin: 0 0 10px 0; cursor: default;
+    }
     
 /* Responsive MQs */
 @media screen and (min-width: 1980px) {
@@ -197,11 +203,12 @@ img {max-width: 100%;}
     <p> - Since 1926</p>
     </div>
     <p class='tagline'>A little bit of “old fashioned” printing mixed with modern innovation.</p>
-    <img src='' />
 </section>
     
 <section class='welcomeWrapper'>
-    <p>Welcome to the Doyle Printing &amp; Communications Printing Portal.</p>  <p>Place and manage orders completely online!</p>
+    <p>Place and manage orders completely online!</p>
+    <p>Just need a quick custom quote? <a href='https://doyle.rocketquotes.com/storefront/form_submit.htm?i=14948'>Click Here!</a></p> 
+    
 </section>
     
 <section class='transWrapper'>
@@ -247,6 +254,6 @@ img {max-width: 100%;}
         </div>
     </div>
 </section>
-
+<footer>&copy;2024 Doyle Printing &amp; Communications</footer>
 <script src='https://seanhageman.com/d.main.js'></script>
 </body>
