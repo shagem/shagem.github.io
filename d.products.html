@@ -5,6 +5,7 @@
 
 <link rel='stylesheet' href='https://seanhageman.com/d.styles.css'>
 <link rel='stylesheet' href='./d.styles.css'>
+    
 </head>
 
 <body>
@@ -36,5 +37,18 @@
     
     
 <footer><p>&copy;2024 Doyle Printing &amp; Communications</p></footer>
-<script src='https://seanhageman.com/d.main.js'></script>
+<script>
+//Mobile Dropdown handler
+const dropdown = document.getElementById('navDropdown');
+dropdown.addEventListener('click', function(){
+    dropdown.classList.toggle('active');
+    document.getElementById('navLoginLink').classList.toggle('active');
+    document.getElementById('navProductsLink').classList.toggle('active');
+    document.getElementById('navQuoteLink').classList.toggle('active');
+    document.getElementById('navFTPLink').classList.toggle('active');
+    document.getElementById('navContactLink').classList.toggle('active');
+});    
+    
+    
+</script>
 </body>
