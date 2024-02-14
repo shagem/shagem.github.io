@@ -2,83 +2,7 @@
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 <title>Doyle Printing and Communications</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;500;700&display=swap');
-:root {
-    --doyleBlue: #003882;
-    --doyleGold: #B59859;
-    --white: #f3f3f3;
-    --offWhite: #ebebeb;
-    --black: #111;
-}
-    
-* {padding: 0; margin: 0;}
-    
-body {font-family: 'Kumbh Sans', sans-serif; color: var(--black); font-weight: 300; background: var(--offWhite);}
-
-img {max-width: 100%;}
-    
-/* Navbar Styles */
-.navbar {
-    display: flex; flex-flow: row wrap; align-items: center;
-    column-gap: 25px; padding: 2rem 1.5rem;
-    background: var(--doyleBlue);
-}
-#navbarWrapper {display: flex; flex-flow: row nowrap; align-items: center;}
-.navLink {
-    color: var(--white); text-align: center; 
-    font-weight: 500; font-size: 1.25rem; text-decoration: none;
-}
-.navLink:hover {
-    cursor: pointer; 
-    color: var(--doyleGold);
-}
-#navLogo:hover {fill: var(--doyleGold)}
-.navSplit {margin: 0 0 0 auto;}
-#navDropdown {display: none; color: var(--white); font-size: 1.25rem;}
-.active {display: inline !important;}
-#navDropdown.active {color: var(--doyleGold);}
-
-    
-    
-/* Main Content Styles */
-.row {display: flex; flex-flow: row wrap;}
-.headingRow {display: flex; flex-flow: row wrap; padding: 1rem 2rem 0 2rem; align-items: baseline; justify-content: center;}
-.headingRow h1 {color: var(--doyleBlue); font-size: 2.5rem; font-weight: 700; text-align: center;}
-.headingRow p {color: var(--doyleGold); font-size: 1.25rem; margin: 0 10px;}
-.headingRow img {max-width: 100%;}
-.tagline {font-weight: 300; color: var(--doyleGold); text-align: center; font-size: 1.1rem; padding: .25rem 2rem 1rem 2rem;}
-
-.headingWrapper {
-    max-width: 100%; margin: auto; 
-    display: flex; flex-direction: column;
-    background: var(--white); border-bottom: 5px solid var(--doyleGold);
-}
-.transWrapper {
-    max-width: 100%; margin: auto; 
-    display: flex; flex-direction: column;
-    align-items: center;
-}
-      
-/* Responsive MQs */
-@media screen and (max-width: 1400px) {
-    
-}
-    
-@media screen and (max-width: 800px) {
-    /* Navbar Styles */
-    .navbar {flex-direction: column; padding: 0 0 0 0;}
-    .navLink {padding: 1rem;}
-    .navSplit {margin: 0;}
-    #navDropdown {display: inline; padding: 1rem;}
-    .navLink {display: none;}
-    
-    /* Main Content Styles */
-    
-}    
-
-</style>
-
+<link rel='stylesheet' href='https://seanhageman.com/d.styles.css'>
 </head>
 
 <body>
@@ -91,8 +15,9 @@ img {max-width: 100%;}
 <path d="m48.7,12.8c-0.9,-0.7 -1.6,-1.2 -3.3,-1.2l-8.6,0l0,0l-8.8,0l0,-11.6l-5.3,3.8l0,7.8l-8.7,0l-0.4,0l-6.7,0l0,0l-6.9,5.5l0,14c0,1.5 0.6,2 1.3,2.9c0.9,0.7 1.6,1.2 3.4,1.2l9,0l0.3,0l8.7,0l0,12l5.3,-3.8l0,-8.1l8.6,0l0.1,0l6.4,0l0,0l6.7,-5.6l0,-14c0.2,-1.5 -0.4,-2.1 -1.1,-2.9zm-34.7,18.3l-0.4,0l-9,0l0,-15.3l9,0l0.4,0l8.7,0l0,15.3l-8.7,0zm31.5,0l-8.7,0l0,0l-8.8,0l0,-15.3l8.6,0l0,0l8.8,0l0,15.3l0.1,0z"/>
 </svg>
 </a>
-<a class='navLink' id='navProductsLink'>Products / Services</a>
 <a class='navLink' id='navLoginLink' href='https://4983.rocketquotes.com/storefront/private-login.htm'>Login</a>
+<a class='navLink' id='navProductsLink'>Products / Services</a>
+<a class='navLink' id='navQuoteLink' href='https://doyle.rocketquotes.com/storefront/form_submit.htm?i=14948'>Custom Quote</a>
 <a class='navLink navSplit' id='navFTPLink' href='https://upload.doyleprint.com/WebInterface/login.html' target='_blank'>Quick FTP</a>
 <a class='navLink' id='navContactLink' href='https://doyle.rocketquotes.com/storefront/contact.htm'>Contact</a>
 </nav>
@@ -102,8 +27,7 @@ img {max-width: 100%;}
     <h1>Doyle Printing &amp; Communications</h1>
     <p> - Since 1926</p>
     </div>
-    <h2 class='tagline'>A little bit of “old fashioned” printing mixed with modern innovation.</h2>
-    <img src='' />
+    <p class='tagline'>A little bit of “old fashioned” printing mixed with modern innovation.</p>
 </section>
     
 <section class='transWrapper'>

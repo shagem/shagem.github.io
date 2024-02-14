@@ -1,4 +1,4 @@
-/* Styles Backup 2/14/24 @12:48pm */
+/* Styles Backup 2/14/24 @2:14pm */
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;500;700&display=swap');
 :root {
@@ -30,6 +30,7 @@ img {max-width: 100%;}
 .navLink:hover {
     cursor: pointer; 
     color: var(--doyleGold);
+    text-decoration: none;
 }
 #navLogo:hover {fill: var(--doyleGold)}
 .navSplit {margin: 0 0 0 auto;}
@@ -152,6 +153,7 @@ footer p:hover {color: var(--doyleGold); cursor: default;}
     .navLink {display: none;}
     
     /* Main Content Styles */
+    .welcomeWrapper {row-gap: 25px;}
     .transWrapper {flex-direction: column}
     
     .productsList {
