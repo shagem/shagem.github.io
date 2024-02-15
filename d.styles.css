@@ -1,4 +1,4 @@
-/* Styles Backup 2/14/24 @2:14pm */
+/* Styles Backup 2/15/24 @3:25pm */
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;500;700&display=swap');
 :root {
@@ -72,14 +72,13 @@ img {max-width: 100%;}
 }
 
 .contactWrapper {
-    display: flex; flex-flow: column wrap;
-    max-width: 40%; background: var(--white);
-    padding: 0 3rem 1rem 3rem; margin: 1rem auto 0 auto; border-radius: 15px;
+    max-width: 60%; margin: 1.5rem auto;
+    display: flex; flex-flow: column wrap; justify-content: center; align-items: center; text-align: center;
 }
-.contactWrapper h2, .contactWrapper h3 {
-    color: var(--doyleBlue); margin: 1rem 0 0 0;
-}
-.contactWrapper p {}
+.contactWrapper h2 {color: var(--doyleBlue); margin: 1rem 0 .5rem 0;}
+.contactWrapper h3 {color: var(--doyleBlue); margin: 2rem 0 .5rem 0;}
+.contactWrapper a {color: var(--doyleBlue); text-decoration: none;}
+.contactWrapper a:hover {color: var(--doyleGold); text-decoration: underline;}
 
 .productsList {
     border-radius: 10px;
