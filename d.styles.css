@@ -18,6 +18,8 @@ img {max-width: 100%;}
 
 .row {display: flex; flex-flow: row wrap; align-items: baseline; column-gap: 5px;}
     
+
+
 /* Navbar Styles */
 .navbar {
     display: flex; flex-flow: row wrap; align-items: center;
@@ -43,7 +45,7 @@ img {max-width: 100%;}
 
     
     
-/* Main Content Styles */
+/* Home Page Content Styles */
 .headingRow {display: flex; flex-flow: row wrap; padding: 1rem 2rem 0 2rem; align-items: baseline; justify-content: center;}
 .headingRow h1 {color: var(--doyleBlue); font-size: 2.5rem; font-weight: 700; text-align: center;}
 .headingRow p {color: var(--doyleGold); font-size: 1.25rem; margin: 0 10px;}
@@ -70,15 +72,6 @@ img {max-width: 100%;}
     display: flex; flex-direction: row; column-gap: 20px;
     align-items: center; justify-content: center;
 }
-
-.contactWrapper {
-    max-width: 60%; margin: 1.5rem auto;
-    display: flex; flex-flow: column wrap; justify-content: center; align-items: center; text-align: center;
-}
-.contactWrapper h2 {color: var(--doyleBlue); margin: 1rem 0 .5rem 0;}
-.contactWrapper h3 {color: var(--doyleBlue); margin: 2rem 0 .5rem 0;}
-.contactWrapper a {color: var(--doyleBlue);}
-.contactWrapper a:hover {color: var(--doyleGold);}
 
 .productsList {
     border-radius: 10px;
@@ -137,15 +130,47 @@ img {max-width: 100%;}
 .gridItemTitle, .gridItemInfo {position: relative; color: var(--white); text-align: center; top: 30%; cursor: default;}
 .gridItemTitle {font-size: 2rem;}
 .gridItemInfo {font-size: 1.25rem;}
-    
+
+
+
+/* Footer Styles */
 footer {
     display: flex; flex-flow: row wrap; position: block;
     bottom: 0; left: 0; justify-content: center; font-size: 12px;
     width: 100%; margin: .5rem 0;
 }
 footer p:hover {color: var(--doyleGold); cursor: default;}
-    
-    
+
+
+
+/* Contact Page Styles */
+.contactWrapper {
+    max-width: 60%; margin: 1.5rem auto;
+    display: flex; flex-flow: column wrap; justify-content: center; align-items: center; text-align: center;
+}
+.contactWrapper h2 {color: var(--doyleBlue); margin: 1rem 0 .5rem 0;}
+.contactWrapper h3 {color: var(--doyleBlue); margin: 2rem 0 .5rem 0;}
+.contactWrapper a {color: var(--doyleBlue);}
+.contactWrapper a:hover {color: var(--doyleGold);}
+
+
+
+/* Products / Services Page Styles */
+.psWrapper {max-width: 80%; margin: 1rem auto;}
+.psWrapper h2 {color: var(--doyleBlue); margin: 0 0 1rem 0;}
+.psContainer {
+    display: flex; flex-flow: row wrap; gap: 10px;
+    margin: 0 0 1rem 0; justify-content: space-evenly; 
+    align-content: center;
+}
+.productCard {
+    display: flex; flex-flow: column wrap;
+    background: var(--offWhite); padding: 1rem; width: 20%;
+    border-radius: 10px; border-top: 3px solid var(--doyleBlue);
+    border-bottom: 3px solid var(--doyleGold);
+}
+.productCard h3 {text-align: center;}
+
 /* Responsive MQs */
 @media screen and (min-width: 1980px) {
     .servicesGrid {max-width: 40%;}
@@ -176,7 +201,7 @@ footer p:hover {color: var(--doyleGold); cursor: default;}
     .productsList li {
         border-bottom: 1.5px solid var(--white); 
         padding: 0; margin: 0.5rem 0 .5rem 0;
-}
+    }
     .productsList h3 {display: none;}
     
     .servicesGrid {
