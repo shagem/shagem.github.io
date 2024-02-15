@@ -77,8 +77,8 @@ img {max-width: 100%;}
 }
 .contactWrapper h2 {color: var(--doyleBlue); margin: 1rem 0 .5rem 0;}
 .contactWrapper h3 {color: var(--doyleBlue); margin: 2rem 0 .5rem 0;}
-.contactWrapper a {color: var(--doyleBlue); text-decoration: none;}
-.contactWrapper a:hover {color: var(--doyleGold); text-decoration: underline;}
+.contactWrapper a {color: var(--doyleBlue);}
+.contactWrapper a:hover {color: var(--doyleGold);}
 
 .productsList {
     border-radius: 10px;
