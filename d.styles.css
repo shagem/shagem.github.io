@@ -167,7 +167,7 @@ footer p:hover {color: var(--doyleGold); cursor: default;}
     display: flex; flex-flow: column wrap;
     background: var(--offWhite); padding: 1rem; width: 20%;
     border-radius: 10px; border-top: 3px solid var(--doyleBlue);
-    border-bottom: 3px solid var(--doyleGold);
+    border-bottom: 3px solid var(--doyleGold); min-height: 100px;
 }
 .productCard h3 {text-align: center;}
 
@@ -213,4 +213,8 @@ footer p:hover {color: var(--doyleGold); cursor: default;}
         'bindery'
         'mailservices';
     }
+    
+    /* Products / Services Content Styles */
+    .psContainer {flex-flow: column wrap;}
+    .productCard {width: 90%;}
 }
