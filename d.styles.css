@@ -5,14 +5,14 @@
     --doyleBlue: #003882;
     --doyleGold: #b59859;
     --doyleDarkGold: #a38950;
-    --white: #f3f3f3;
+    --white: #fff;
     --offWhite: #ebebeb;
     --black: #111;
 }
     
 * {padding: 0; margin: 0;}
     
-body {font-family: 'Kumbh Sans', sans-serif; color: var(--black); font-weight: 300; background: var(--offWhite); font-size: 1.1rem;}
+body {font-family: 'Kumbh Sans', sans-serif; color: var(--black); font-weight: 300; background: var(--white); font-size: 1.1rem;}
 
 img {max-width: 100%;}
 
@@ -73,8 +73,8 @@ img {max-width: 100%;}
 
 .contactWrapper {
     display: flex; flex-flow: column wrap;
-    max-width: 60%; background: var(--white);
-    padding: 0 3rem 1rem 3rem; margin: 3rem auto 0 auto; border-radius: 15px;
+    max-width: 40%; background: var(--white);
+    padding: 0 3rem 1rem 3rem; margin: 1rem auto 0 auto; border-radius: 15px;
 }
 .contactWrapper h2, .contactWrapper h3 {
     color: var(--doyleBlue); margin: 1rem 0 0 0;
