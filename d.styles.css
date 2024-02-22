@@ -116,8 +116,11 @@ nav {
 }
 .card img {min-height: 250px; cursor: pointer;  border: 1px solid var(--grey);}
 .card h3 {font-weight: 500; margin-top: 1rem; cursor: pointer;}
-.cardInfo {font-size: 1.1rem; margin: .5rem 0; font-weight: 300;}
-.cardPrice {font-style: italic; font-weight: 300;}
+.cardInfo {
+    font-size: 1.1rem; margin: .5rem 0; 
+    font-weight: 300; color: var(--black);
+}
+.cardPrice {font-style: italic; font-weight: 300; color: var(--black);}
 
 .breadcrumbs {
     display: flex; flex-flow: row wrap; 

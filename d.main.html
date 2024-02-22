@@ -16,13 +16,13 @@
 <nav>
     <a class='navLink' id='navDropdown'>&#9776;</a>
     <a id='navLogo' href='https://doyle.rocketquotes.com/storefront'>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class='navLink' fill='#fff' width="50" height="47" class='navLink'>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class='navLink' fill='#fff' width="50" height="47">
         <path d="m48.7,12.8c-0.9,-0.7 -1.6,-1.2 -3.3,-1.2l-8.6,0l0,0l-8.8,0l0,-11.6l-5.3,3.8l0,7.8l-8.7,0l-0.4,0l-6.7,0l0,0l-6.9,5.5l0,14c0,1.5 0.6,2 1.3,2.9c0.9,0.7 1.6,1.2 3.4,1.2l9,0l0.3,0l8.7,0l0,12l5.3,-3.8l0,-8.1l8.6,0l0.1,0l6.4,0l0,0l6.7,-5.6l0,-14c0.2,-1.5 -0.4,-2.1 -1.1,-2.9zm-34.7,18.3l-0.4,0l-9,0l0,-15.3l9,0l0.4,0l8.7,0l0,15.3l-8.7,0zm31.5,0l-8.7,0l0,0l-8.8,0l0,-15.3l8.6,0l0,0l8.8,0l0,15.3l0.1,0z"/>
     </svg>
     </a>
     <a class='navLink' id='navProducts' href='https://doyle.rocketquotes.com/storefront/f_category.htm?i=64620'>Products</a>
     <a class='navLink' id='navSolutions'>Printing Solutions</a>
-    <a class='navLink' id='navQuote'>Custom Quote</a>
+    <a class='navLink' id='navQuote' href='https://doyle.rocketquotes.com/storefront/form_submit.htm?i=14948'>Custom Quote</a>
     <a class='navLink' id='navLogin'>Login</a>
     <a class='navLink' id='navFTP'>Quick FTP</a>
     <a class='navLink' id='navContact'>Contact</a>
@@ -118,6 +118,7 @@
 const dropdown = document.getElementById('navDropdown');
 dropdown.addEventListener('click', function(){
     dropdown.classList.toggle('active');
+    document.getElementById('navLogo').classList.toggle('active');
     document.getElementById('navProducts').classList.toggle('active');
     document.getElementById('navSolutions').classList.toggle('active');
     document.getElementById('navQuote').classList.toggle('active');
