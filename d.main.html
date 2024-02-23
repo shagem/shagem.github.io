@@ -41,13 +41,15 @@
     
 <main class='container'>
     <div class='quickLinks'>
-        <a>Copy Center</a>
-        <a>Small &amp; Large Format Printing</a>
-        <a>Office Supplies</a>
-        <a>Marketing Supplies</a>
-        <a>Apparel</a>
-        <a>Banners</a>
+        <a id='copyCenter'>Copy Center</a>
+        <a id='formatPrinting'>Small &amp; Large Format Printing</a>
+        <a id='officeSupplies'>Office Supplies</a>
+        <a id='marketingSupplies'>Marketing Supplies</a>
+        <a id='apparel'>Apparel</a>
     </div>
+    
+    
+    
     
     <div class='hero'>
         <div class='heroType'>
@@ -58,25 +60,25 @@
     <h2 class='featuredTitle'>Featured Products</h2>
     <div class='featuredProducts'>
         <div class='card'>
-            <img src=''>
+            <img src='https://placehold.co/200'>
             <h3>Business Cards</h3>
             <p class='cardInfo'>Sample description of item...</p>
             <p class='cardPrice'>$0.00</p>
         </div>
         <div class='card'>
-            <img src=''>
+            <img src='https://placehold.co/200'>
             <h3>Letterheads</h3>
             <p class='cardInfo'>Sample description of item...</p>
             <p class='cardPrice'>$0.00</p>
         </div>
         <div class='card'>
-            <img src=''>
+            <img src='https://placehold.co/200'>
             <h3>Envelopes</h3>
             <p class='cardInfo'>Sample description of item...</p>
             <p class='cardPrice'>$0.00</p>
         </div>
         <div class='card'>
-            <img src=''>
+            <img src='https://placehold.co/200'>
             <h3>Books &amp; Catalogs</h3>
             <p class='cardInfo'>Sample description of item...</p>
             <p class='cardPrice'>$0.00</p>
@@ -124,7 +126,20 @@ dropdown.addEventListener('click', function(){
     document.getElementById('navLogin').classList.toggle('active');
     document.getElementById('navFTP').classList.toggle('active');
     document.getElementById('navContact').classList.toggle('active');
-});    
+});
+    
+    
+    
+//Quick Links Dropdown Handler
+const copyCenter = document.getElementById('copyCenter');
+    copyCenter.addEventListener('mouseover', function(){
+        
+    });
+    copyCenter.addEventListener('mouseout', function(){
+        
+    });
+    
+    
 </script>
     
     
