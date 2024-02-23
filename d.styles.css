@@ -225,7 +225,7 @@ footer {
     }
     .featuredProducts {margin: 0 5% 4rem 5%;}
     
-    .contactCard {width: 90%;}
+    .contactCard {width: 90%; margin-bottom: 2rem;}
     .contactCardType {padding: 1rem;}
     
     .footerContainer {padding: 0 4%; column-gap: 10px}
