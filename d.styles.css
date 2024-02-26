@@ -273,6 +273,6 @@ footer {
     
 @media screen and (max-width: 850px) {
     .featuredProducts {flex-flow: column;}
-    .card {margin: 1rem 5%;}
+    .card {margin: 1rem 5%; flex: auto;}
     .card img {height: auto; width: auto;}
 }
