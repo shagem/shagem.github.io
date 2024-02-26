@@ -74,19 +74,28 @@ nav {
 .companySlogan {font-style: italic; font-weight: 300;}
 
 
-/* Main Content Styles */
-.quickLinks {
-    display: flex; flex-flow: row nowrap;
-    background: var(--doyleGold); border-radius: 5px;
-    border-bottom: 3px solid var(--doyleDarkGold);
+
+.quickLinksContainer {
+    display: flex; flex-flow: row nowrap; width: 100%;
+    border-bottom: 4px solid var(--doyleDarkGold);
 }
-.quickLinks a {
-    padding: .75rem 10px; color: var(--white); border-radius: 5px;
-    font-weight: 300; font-style: italic; font-size: .8rem;
-    flex-grow: 1; text-align: center; transition: 0.3s;
+.quickLinkItem {
+    cursor: pointer; background: var(--doyleGold);
+    padding: .75rem; color: var(--white);
+    font-size: .9rem; text-align: center;
+    flex: 1 1 0px; transition: .3s;
 }
-.quickLinks a:hover {background: var(--doyleDarkGold); cursor: pointer;}
-.quickLink {text-align: left;}
+.quickLinkItem:hover {
+    background: var(--doyleDarkGold);}
+.qLink {
+    margin-top: .6rem; font-style: italic; text-align: left;
+    display: none; font-size: .8rem; width: fit-content;
+}
+.qLink:hover {text-decoration: underline;}
+.qLink.shown {display: block !important;}
+
+
+
 
 .hero {
     background-image: url('https://seanhageman.com/d.imgs/DC_Skyline.jpeg');
@@ -94,7 +103,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-    margin: 1rem 0; height: 350px;
+    margin: .5rem 0 1rem 0; height: 350px;
     border-radius: 5px;
     display: flex; flex-flow: row wrap; 
     align-items: center;
@@ -225,8 +234,11 @@ footer {
     }
     .companySlogan {font-size: .9rem !important;}
     
-    .quickLinks {flex-flow: column; margin: 0 20%;}
-    .quickLinks a {border-bottom: 2px solid var(--doyleDarkGold);}
+    .quickLinksContainer {
+        flex-flow: column;
+        max-width: 80%;
+        margin: auto;
+    }
     
     .hero {margin-bottom: 3rem; border-radius: 0;}
     
@@ -245,9 +257,6 @@ footer {
 }
     
 @media screen and (max-width: 850px) {
-    
-    .quickLinks {margin: 0 5%;}
-    
     .featuredProducts {flex-flow: column;}
     .card {margin: 1rem 5%;}
     .card img {height: auto; width: auto;}

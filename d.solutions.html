@@ -41,13 +41,43 @@
     
     
 <main class='container'>
-    <div class='quickLinks'>
-        <a>Copy Center</a>
-        <a>Small &amp; Large Format Printing</a>
-        <a>Office Supplies</a>
-        <a>Marketing Supplies</a>
-        <a>Apparel</a>
-        <a>Banners</a>
+    
+    <div class='quickLinksContainer'>
+        <div class='quickLinkItem' id='copyCenter'>
+            Copy Center
+            <a class='qLink'>Carbonless Copies</a>
+            <a class='qLink'>Color Copies</a>
+            <a class='qLink'>Books &amp; Catalogs</a>
+        </div>
+        <div class='quickLinkItem' id='formatPrinting'>Small &amp; Large 
+            Format Printing
+            <a class='qLink'>Posters</a>
+            <a class='qLink'>Presentation Boards</a>
+            <a class='qLink'>Banners</a>
+        </div>
+        <div class='quickLinkItem' id='officeSupplies'>
+            Office Supplies
+            <a class='qLink'>Letterheads</a>
+            <a class='qLink'>Envelopes</a>
+            <a class='qLink'>Notepads</a>
+            <a class='qLink'>Manuals</a>
+            <a class='qLink'>Pocket Folders</a>
+        </div>
+        <div class='quickLinkItem' id='marketingSupplies'>
+            Marketing Supplies
+            <a class='qLink'>Business Cards</a>
+            <a class='qLink'>Postcards</a>
+            <a class='qLink'>Brochures</a>
+            <a class='qLink'>Palm Cards</a>
+            <a class='qLink'>Door Hangers</a>
+        </div>
+        <div class='quickLinkItem' id='fulfillment'>
+            Merchandise
+            <a class='qLink'>Apparel</a>
+            <a class='qLink'>Cups &amp; Mugs</a>
+            <a class='qLink'>Stickers</a>
+            <a class='qLink'>Magnets</a>
+        </div>
     </div>
     
     <div class='breadcrumbs'>
@@ -110,7 +140,77 @@ dropdown.addEventListener('click', function(){
     document.getElementById('navLogin').classList.toggle('active');
     document.getElementById('navFTP').classList.toggle('active');
     document.getElementById('navContact').classList.toggle('active');
-});    
+});
+    
+//Quick Links Dropdown Handler
+let qLinks = document.getElementsByClassName('qLink');
+const copyCenter = document.getElementById('copyCenter');
+const formatPrinting = document.getElementById('formatPrinting');
+const officeSupplies = document.getElementById('officeSupplies');
+const marketingSupplies = document.getElementById('marketingSupplies');
+const fulfillment = document.getElementById('fulfillment');
+
+    copyCenter.addEventListener('mouseenter', function(){
+        qLinks[0].classList.toggle('shown');
+        qLinks[1].classList.toggle('shown');
+        qLinks[2].classList.toggle('shown');
+    });
+    copyCenter.addEventListener('mouseleave', function(){
+        qLinks[0].classList.toggle('shown');
+        qLinks[1].classList.toggle('shown');
+        qLinks[2].classList.toggle('shown');
+    });
+    formatPrinting.addEventListener('mouseenter', function(){
+        qLinks[3].classList.toggle('shown');
+        qLinks[4].classList.toggle('shown');
+        qLinks[5].classList.toggle('shown');
+    });
+    formatPrinting.addEventListener('mouseleave', function(){
+        qLinks[3].classList.toggle('shown');
+        qLinks[4].classList.toggle('shown');
+        qLinks[5].classList.toggle('shown');
+    });
+    officeSupplies.addEventListener('mouseenter', function(){
+        qLinks[6].classList.toggle('shown');
+        qLinks[7].classList.toggle('shown');
+        qLinks[8].classList.toggle('shown');
+        qLinks[9].classList.toggle('shown');
+        qLinks[10].classList.toggle('shown');
+    });
+    officeSupplies.addEventListener('mouseleave', function(){
+        qLinks[6].classList.toggle('shown');
+        qLinks[7].classList.toggle('shown');
+        qLinks[8].classList.toggle('shown');
+        qLinks[9].classList.toggle('shown');
+        qLinks[10].classList.toggle('shown');
+    });
+    marketingSupplies.addEventListener('mouseenter', function(){
+        qLinks[11].classList.toggle('shown');
+        qLinks[12].classList.toggle('shown');
+        qLinks[13].classList.toggle('shown');
+        qLinks[14].classList.toggle('shown');
+        qLinks[15].classList.toggle('shown');
+    });
+    marketingSupplies.addEventListener('mouseleave', function(){
+        qLinks[11].classList.toggle('shown');
+        qLinks[12].classList.toggle('shown');
+        qLinks[13].classList.toggle('shown');
+        qLinks[14].classList.toggle('shown');
+        qLinks[15].classList.toggle('shown');
+    });
+    fulfillment.addEventListener('mouseenter', function(){
+        qLinks[16].classList.toggle('shown');
+        qLinks[17].classList.toggle('shown');
+        qLinks[18].classList.toggle('shown');
+        qLinks[19].classList.toggle('shown');
+    });
+    fulfillment.addEventListener('mouseleave', function(){
+        qLinks[16].classList.toggle('shown');
+        qLinks[17].classList.toggle('shown');
+        qLinks[18].classList.toggle('shown');
+        qLinks[19].classList.toggle('shown');
+    });
+    
 </script>
     
     
