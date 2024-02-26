@@ -149,18 +149,30 @@ nav {
 }
 
 
+
+
 /* Product Page Styles */
 .anchorCardsContainer {
     display: flex; flex-flow: row wrap; 
-    grid-gap: 25px; justify-content: space-around;
-    margin: 2rem auto 2rem auto; border-bottom: 2px solid var(--grey);
-    padding-bottom: 3rem;
+    justify-content: space-around;
+    margin: 2rem auto 2rem auto;
+    padding-bottom: 1.5rem; row-gap: 2rem;
 }
 .anchorCard {
-    display: flex; flex-flow: column wrap; text-align: center;
-    
+    display: flex; flex-flow: column wrap; 
+    text-align: center; align-items: center;
 }
-.anchorCard img {border-radius: 50%; margin-bottom: 10px;}
+.anchorCard a {font-size: 1rem; color: var(--doyleBlue); transition: 0.3s;}
+.anchorCard a:hover {color: var(--doyleGold); cursor: pointer;}
+.anchorCard img {
+    border-radius: 50%; margin-bottom: 10px; 
+    max-width: 75%; cursor: pointer;
+}
+
+
+
+
+
 
 /* Contact Page Styles */
 .contactCard {
