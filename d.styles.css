@@ -275,7 +275,7 @@ footer {
     
     .footerContainer {padding: 0 4%; column-gap: 10px}
     .footerCol h6 {font-size: .8rem; text-align: left;}
-    .footerCol a {font-size: .7rem;}
+    .footerCol a {font-size: .7rem; text-align: left;}
 }
     
 @media screen and (max-width: 850px) {
