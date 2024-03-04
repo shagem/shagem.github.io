@@ -57,7 +57,7 @@ nav {
 .active {display: inline !important;}
 
 
-
+main.container {margin-bottom: 2rem;}
 .companyHeading {
     display: flex; flex-flow: column wrap;
     text-align: center; margin: 1rem auto;
