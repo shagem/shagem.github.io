@@ -274,7 +274,7 @@ footer {
     .contactCardType {padding: 1rem;}
     
     .footerContainer {padding: 0 4%; column-gap: 10px}
-    .footerCol h6 {font-size: .8rem;}
+    .footerCol h6 {font-size: .8rem; text-align: left;}
     .footerCol a {font-size: .7rem;}
 }
     
