@@ -156,8 +156,8 @@ main.container {margin-bottom: 2rem;}
 
 /* Product Page Styles */
 .productsSectionTitle {
-    margin: 1rem 0 .5rem 0; padding-bottom: .5rem;
-    border-bottom: 1px solid var(--grey);}
+    margin-top: 1rem; padding-top: 1rem;
+    border-top: 1px solid var(--grey);}
 .anchorCardsContainer {
     display: flex; flex-flow: row wrap; 
     justify-content: space-around;
@@ -174,11 +174,34 @@ main.container {margin-bottom: 2rem;}
     border-radius: 50%; margin-bottom: 10px; 
     max-width: 75%; cursor: pointer;
 }
-.copyCenterContainer {
-    margin: 1rem 0 2rem 0;
-    padding-bottom: 1.5rem;
+
+#ccContainer, #fpContainer, #osContainer, #msContainer, #merchContainer {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; 
+    gap: .25rem; margin-bottom: 1.5rem;
 }
+#ccContainer {
     
+}
+#fpContainer {
+    
+}
+#osContainer {
+    
+}
+#msContainer {
+    
+}
+#merchContainer {
+    
+}
+.productGroup {
+    display: flex; flex-flow: column wrap;
+    border-radius: 8px;
+    padding: .75rem;
+}
+.productGroup a {margin: 0 .5rem;}
+.productGroup img {max-height: 225px; max-width: 225px; margin: auto; border-radius: 50%; border: 1px solid var(--black);}
+.groupName {font-weight: 300; text-align: center; margin-bottom: .5rem;}
 
 
 
@@ -269,6 +292,12 @@ footer {
         border-top: 2px solid var(--doyleBlue);
     }
     .featuredProducts {margin: 0 5% 4rem 5%;}
+    
+    
+    #ccContainer, #fpContainer, #osContainer, #msContainer, #merchContainer {
+        grid-template-columns: 1fr;
+    }
+    .productsSectionTitle {text-align: center; }
     
     .contactCard {width: 90%; margin-bottom: 2rem;}
     .contactCardType {padding: 1rem;}
