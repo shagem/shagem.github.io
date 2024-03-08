@@ -23,7 +23,7 @@ img {max-width: 100%;}
 
 h1, h2, h3, h4, h5, h6 {color: var(--doyleBlue);}
 
-a {text-decoration: none;}
+a {color: var(--doyleBlue);}
 
 .wrapper {
     display: flex; flex-flow: column nowrap; 
@@ -47,7 +47,7 @@ nav {
     padding: 2rem; background: var(--doyleBlue); align-items: center;
     border-bottom: 5px solid var(--doyleGold);
 }
-.navLink {color: var(--white); transition: 0.3s;}
+.navLink {color: var(--white); transition: 0.3s; text-decoration: none;}
 .navLink:hover {
     color: var(--doyleGold); fill: var(--doyleGold); 
     cursor: pointer;
@@ -145,6 +145,7 @@ main.container {margin-bottom: 2rem;}
 }
 .crumb {
     color: var(--white); font-size: 1rem; cursor: pointer; transition: 0.3s;
+    text-decoration: none;
 }
 .crumb:hover {color: var(--doyleGold); fill: var(--doyleGold);}
 .crumb.activeCrumb {
@@ -196,12 +197,22 @@ main.container {margin-bottom: 2rem;}
 }
 .productGroup {
     display: flex; flex-flow: column wrap;
-    border-radius: 8px;
-    padding: .75rem;
+    border-radius: 8px; padding: 1rem 0;
+    align-items: center; gap: 10px;
 }
-.productGroup a {margin: 0 .5rem;}
-.productGroup img {max-height: 225px; max-width: 225px; margin: auto; border-radius: 50%; border: 1px solid var(--black);}
-.groupName {font-weight: 300; text-align: center; margin-bottom: .5rem;}
+.productGroup a {
+    margin: 0 .5rem; width: fit-content;
+    font-size: 1rem; transition: 0.3s;
+}
+.productGroup a:hover {color: var(--doyleGold);}
+.productGroup img {
+    max-height: 200px; max-width: 200px; margin: auto; border-radius: 50%; border: 1px solid var(--black); transition: 0.3s;
+}
+.productGroup img:hover {opacity: .7;}
+.groupName {
+    font-weight: 300; text-align: center; 
+    margin-bottom: .5rem; font-size: 1.5rem;
+}
 
 
 
@@ -242,7 +253,7 @@ footer {
 .footerCol h6 {color: var(--white); font-size: 1rem; font-style: italic;}
 .footerCol a {
     color: var(--white); font-size: .8rem; font-style: italic; 
-    width: fit-content; transition: 0.3s;
+    width: fit-content; transition: 0.3s; text-decoration: none;
 }
 .footerCol a:hover {color: var(--doyleGold); cursor: pointer;}
 .copyright {
