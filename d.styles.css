@@ -207,13 +207,14 @@ main.container {margin-bottom: 2rem;}
 }
 .productGroup a:hover {color: var(--doyleGold);}
 .productGroup img {
-    max-height: 200px; max-width: 200px; margin: auto; border-radius: 50%; border: 1px solid var(--black); transition: 0.3s;
+    max-height: 200px; max-width: 200px; margin: 0 auto; border-radius: 50%; border: 1px solid var(--black); transition: 0.3s;
 }
 .productGroup img:hover {opacity: .7;}
 .groupName {
     font-weight: 300; text-align: center; 
     margin-bottom: .5rem; font-size: 1.5rem;
 }
+
 
 
 
