@@ -174,8 +174,10 @@ main.container {margin-bottom: 2rem;}
 .anchorCard a:hover {color: var(--doyleGold); cursor: pointer;}
 .anchorCard img {
     border-radius: 50%; margin-bottom: 10px; 
-    max-width: 75%; cursor: pointer;
+    max-width: 75%; border: 1px solid var(--black);
+    transition: 0.3s;
 }
+.anchorCard img:hover {opacity: .7;}
 
 #ccContainer, #fpContainer, #osContainer, #msContainer, #merchContainer {
     display: grid; grid-template-columns: 1fr 1fr 1fr; 
