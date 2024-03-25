@@ -1,20 +1,20 @@
 :root {
     --black: #222;
     --white: #fff;
-    --transparentWhite: rgba(255, 255, 255, .6);
+    --transWhite: rgba(255, 255, 255, .4);
     --grey: #ccc;
     --pGradient: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     --rGradient: linear-gradient(to right, rgba(255,0,0,1), rgba(255,154,0,1), rgba(208,222,33,1), rgba(79,220,74,1), rgba(63,218,216,1), rgba(47,201,226,1), rgba(28,127,238,1), rgba(95,21,242,1), rgba(186,12,248,1), rgba(251,7,217,1), rgba(255,0,0,1));
 }
 
-* {margin: 0; padding: 0; box-sizing: border-box; transition: .3s;}
+* {margin: 0; padding: 0; transition: .3s;}
 
 i {color: var(--black); font-weight: 100;}
 
 body {
     background: var(--pGradient);
     background-attachment: fixed;
-    color: var(--white);
+    color: var(--black);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
@@ -23,40 +23,32 @@ body {
 nav {
     display: flex; flex-flow: row nowrap;
     align-items: center;
-    border-bottom: 1px solid var(--white);
+    font-weight: 600;
+    box-shadow: 0px 0px 15px var(--transWhite);
     & a {
-        color: var(--black); 
-        font-weight: 600;
-        text-decoration: none;
-        cursor: pointer;
-        &.split {margin-left: auto;}
-        &.socials {margin-right: 1rem;}
+        color: var(--black); cursor: pointer;
+        &:hover {text-decoration: underline;}
     }
-}
-#navHome {padding: 1rem; background: var(--white);}
-#navWork, #navAbout, #navArchive {
-    margin: 0 1rem;
-    &:hover {text-decoration: underline;}
+    & #navHome {
+    padding: 1rem;
+    text-decoration: none;
+    &:hover {background: var(--transWhite);}
+    }
+    & .navLinks {
+    display: flex; flex-flow: row nowrap;
+    margin: 0 .75rem; column-gap: 1.5rem;
+    }
+    & .navSocials {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; column-gap: .75rem;
+    margin: 0 1rem 0 auto;
+    & a {text-decoration: none;}
+    }
 }
 
 main {
-    display: flex; flex-flow: column wrap; 
-    max-width: 1400px; min-height: 100vh;
-    margin: 0 auto;
-    & section {
-        display: flex; flex-flow: column wrap;
-        & .splash {
-            padding: 2rem;
-            & h1, h2 {
-                font-weight: 300; font-size: 4rem; cursor: default;
-                width: fit-content; height: fit-content;
-                &:hover {color: var(--black);}
-            }
-        }
-    }
+    
 }
-
-#workPage, #aboutPage, #archivePage {display: none;}
 
 footer {
    
@@ -66,10 +58,9 @@ footer {
     header {}
     nav {}
     main {}
-    footer {
-        flex-flow: column wrap;
-        align-items: center;
-        grid-gap: 1rem;
-        padding: 1rem 3rem;
-    }
+    footer {}
+
+@media screen and (max-width: 600px) {
+    nav {}
+    main {}
 }
