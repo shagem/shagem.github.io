@@ -3,17 +3,16 @@
     --white: #fff;
     --transparentWhite: rgba(255, 255, 255, .6);
     --grey: #ccc;
-    --gradientB2P: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    --pGradient: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    --rGradient: linear-gradient(to right, rgba(255,0,0,1), rgba(255,154,0,1), rgba(208,222,33,1), rgba(79,220,74,1), rgba(63,218,216,1), rgba(47,201,226,1), rgba(28,127,238,1), rgba(95,21,242,1), rgba(186,12,248,1), rgba(251,7,217,1), rgba(255,0,0,1));
 }
 
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; box-sizing: border-box; transition: .3s;}
 
-a {transition: .3s;}
-
-h1 {font-size: 5rem; font-weight: 200; color: var(--white);}
+i {color: var(--black); font-weight: 100;}
 
 body {
-    background: var(--gradientB2P);
+    background: var(--pGradient);
     background-attachment: fixed;
     color: var(--white);
     font-family: "Poppins", sans-serif;
@@ -27,26 +26,37 @@ nav {
     border-bottom: 1px solid var(--white);
     & a {
         color: var(--black); 
-        font-weight: 600; 
+        font-weight: 600;
+        text-decoration: none;
         cursor: pointer;
-        &:hover {text-decoration: underline;}
+        &.split {margin-left: auto;}
+        &.socials {margin-right: 1rem;}
     }
 }
 #navHome {padding: 1rem; background: var(--white);}
-#navWork, #navAbout, #navArchive {margin: 0 1rem;}
+#navWork, #navAbout, #navArchive {
+    margin: 0 1rem;
+    &:hover {text-decoration: underline;}
+}
 
 main {
     display: flex; flex-flow: column wrap; 
     max-width: 1400px; min-height: 100vh;
     margin: 0 auto;
     & section {
-        display: flex; flex-flow: row wrap;
-        & h1 {
-        font-weight: 200;
-        padding: 2rem 1rem 1rem 1rem;
+        display: flex; flex-flow: column wrap;
+        & .splash {
+            padding: 2rem;
+            & h1, h2 {
+                font-weight: 300; font-size: 4rem; cursor: default;
+                width: fit-content; height: fit-content;
+                &:hover {color: var(--black);}
+            }
         }
     }
 }
+
+#workPage, #aboutPage, #archivePage {display: none;}
 
 footer {
    
