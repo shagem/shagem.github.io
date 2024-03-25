@@ -32,7 +32,8 @@ nav {
     & #navHome {
     padding: 1rem;
     text-decoration: none;
-    &:hover {background: var(--transWhite);}
+    background: var(--transWhite);
+    &:hover {background: var(--white);}
     }
     & .navLinks {
     display: flex; flex-flow: row nowrap;
