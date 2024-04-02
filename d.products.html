@@ -6,9 +6,9 @@
 
 <!-- Local Link for Offline Testing -->
 <link rel='stylesheet' href='./d.styles.css'>
-
+<!--
 <link rel='stylesheet' href='https://seanhageman.com/d.styles.css'>
-
+-->
     
 </head>
 
@@ -307,10 +307,11 @@
 </div>
     
 <script>
-    
+//Handles Hashlink from other pages
 document.addEventListener("DOMContentLoaded", (event) => {
     let hashcode = window.location.hash;
     hashcode = hashcode.slice(1); // Remove the leading '#'
+    console.log(document.getElementById(hashcode));
     document.getElementById(hashcode).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
 });
     
