@@ -90,7 +90,7 @@ main.container {margin-bottom: 2rem;}
 .qLink {
     margin-top: .6rem; font-style: italic; text-align: left;
     display: none; font-size: .8rem; width: fit-content;
-    color: var(--white);
+    color: var(--white); text-decoration: none;
 }
 .qLink:hover {text-decoration: underline;}
 .qLink.shown {display: block !important;}
