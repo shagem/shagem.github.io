@@ -4,9 +4,10 @@
 <title>Doyle Printing and Communications</title>
 
 <!-- Local Link for Offline Testing -->
-
+<link rel='stylesheet' href='./d.styles.css'>
+<!--
 <link rel='stylesheet' href='https://seanhageman.com/d.styles.css'>
-
+-->
     
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,96 +37,9 @@
 
     </section>
     <section>
-        <h4 id='products'>Products</h4>
-        <article class='cardContainer'>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Copies</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Carbonless Forms</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Books &amp; Catalogs</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Signs &amp; Posters</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Presentation Boards</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Banners</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Letterheads</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Envelopes</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Labels</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Notepads</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Manuals</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Pocket Folders</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Business Cards</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Postcards</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Brochures</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Palm Cards</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Rack Cards</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Door Hangers</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Apparel</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Stickers</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Cups &amp; Mugs</h5>
-            </div>
-            <div class="card">
-                <img src="https://placehold.co/200" alt='#'>
-                <h5>Magnets</h5>
-            </div>
+        <h4 id='products'>All Products A-Z</h4>
+        <article id='cardContainer'>
+            
         </article>
     </section>
     <section>
@@ -143,22 +57,92 @@
 
     
 <script>
-    
-
-    
+//Nav scroll handlers
     document.getElementById('navProducts').addEventListener('click', function(){
         document.getElementById('products').scrollIntoView({behavior: 'smooth'});
-    });
-    
+});
     document.getElementById('navServices').addEventListener('click', function(){
         document.getElementById('services').scrollIntoView({behavior: 'smooth'});
-    });
-    
+});
     document.getElementById('backToTop').addEventListener('click', function(){
         document.getElementById('home').scrollIntoView({behavior: 'smooth'});
-    });
-
+});
     
+//Product overlay
+const products = [
+    { name: 'Apparel', size: '', img: 'https://placehold.co/200', alt: 'Apparel Image' },
+    { name: 'Banners', size: '', img: 'https://placehold.co/200', alt: 'Banners Image' },
+    { name: 'Books & Catalogs', size: '', img: 'https://placehold.co/200', alt: 'Books & Catalogs Image' },
+    { name: 'Brochures', size: '', img: 'https://placehold.co/200', alt: 'Brochures Image' },
+    { name: 'Business Cards', size: '', img: 'https://placehold.co/200', alt: 'Business Cards Image' },
+    { name: 'Carbonless Forms', size: '', img: 'https://placehold.co/200', alt: 'Carbonless Forms Image' },
+    { name: 'Copies', size: '', img: 'https://placehold.co/200', alt: 'Copies Image' },
+    { name: 'Cups & Mugs', size: '', img: 'https://placehold.co/200', alt: 'Cups & Mugs Image' },
+    { name: 'Door Hangers', size: '', img: 'https://placehold.co/200', alt: 'Door Hangers Image' },
+    { name: 'Envelopes', size: '', img: 'https://placehold.co/200', alt: 'Envelopes Image' },
+    { name: 'Labels', size: '', img: 'https://placehold.co/200', alt: 'Labels Image' },
+    { name: 'Letterheads', size: '', img: 'https://placehold.co/200', alt: 'Letterheads Image' },
+    { name: 'Magnets', size: '', img: 'https://placehold.co/200', alt: 'Magnets Image' },
+    { name: 'Manuals', size: '', img: 'https://placehold.co/200', alt: 'Manuals Image' },
+    { name: 'Notepads', size: '', img: 'https://placehold.co/200', alt: 'Notepads Image' },
+    { name: 'Palm Cards', size: '', img: 'https://placehold.co/200', alt: 'Palm Cards Image' },
+    { name: 'Pocket Folders', size: '', img: 'https://placehold.co/200', alt: 'Pocket Folders Image' },
+    { name: 'Postcards', size: '', img: 'https://placehold.co/200', alt: 'Postcards Image' },
+    { name: 'Presentation Boards', size: '', img: 'https://placehold.co/200', alt: 'Presentation Boards Image' },
+    { name: 'Rack Cards', size: '', img: 'https://placehold.co/200', alt: 'Rack Cards Image' },
+    { name: 'Signs & Posters', size: '', img: 'https://placehold.co/200', alt: 'Signs & Posters Image' },
+    { name: 'Stickers', size: '', img: 'https://placehold.co/200', alt: 'Stickers Image' }
+];
+    
+function createCards() {
+// Get the container where the cards will be appended
+    const container = document.getElementById('cardContainer');
+
+// Loop through each product in the products array
+    products.forEach(product => {
+        
+// Create card
+    const cardDiv = document.createElement('div');
+    cardDiv.classList.add('card');
+
+    const img = document.createElement('img');
+    img.src = product.img;
+    img.alt = product.alt;
+        
+    const heading = document.createElement('h5');
+    heading.textContent = product.name;
+        
+    cardDiv.appendChild(img);
+    cardDiv.appendChild(heading);
+    container.appendChild(cardDiv);
+        
+    cardDiv.addEventListener('click', function() {
+// Create overlay
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+        
+    const overlayCard = document.createElement('div');
+    overlayCard.classList.add('overlay-card');
+        
+    const overlayCardHeading = document.createElement('h5');
+    overlayCardHeading.textContent = product.name;
+        
+// Add event listener to remove overlay when clicked
+    overlay.addEventListener('click', function(event) {
+    if (event.target === overlay) {
+        overlay.remove();
+        }
+    });
+// Append overlay to the DOM
+    overlayCard.appendChild(overlayCardHeading);
+    overlay.appendChild(overlayCard);
+    document.body.appendChild(overlay);
+    });
+  });
+}
+     
+createCards();
+     
     
 </script>
 
