@@ -22,7 +22,7 @@ nav {
     padding: 2rem;
     background: var(--doyleBlue);
     border-bottom: 4px solid var(--doyleGold);
-    & a {cursor: pointer; color: var(--white); font-size: 1.1rem; max-height: 50px;}
+    & a {cursor: pointer; color: var(--white); font-size: 1.1rem; max-height: 50px; text-decoration: none;}
     & a:hover {color: var(--doyleGold);}
 }
 #navAccount {margin-left: auto;}
@@ -45,7 +45,7 @@ header {
 main {
     max-width: 1500px; 
     margin: auto;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     background: var(--white);
     display: flex; flex-flow: column;
     grid-gap: 1rem;
@@ -54,6 +54,7 @@ main {
         font-size: 1.5rem; font-weight: 300; color: var(--doyleBlue); 
         margin-bottom: 1rem;
     }
+    & p {margin-top: .75rem;}
 }
 #cardContainer {
     display: flex; flex-flow: row wrap;
@@ -97,15 +98,23 @@ footer {
 }
 
 .overlay-card {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    min-width: 300px;
-    min-height: 400px;
+    display: flex; 
+    flex-flow: column;
+    align-items: center;
+    grid-gap: .75rem;
+    padding: 1rem .75rem;
+    height: 450px; width: 300px;
     border-radius: 7px;
     background: var(--white);
     border: 3px solid var(--doyleGold);
     & h5 {color: var(--doyleBlue); font-size: 1.5rem; font-weight: 400;}
+    & p {text-align: center;}
+    & div {display: flex; flex-flow: column; grid-gap: .5rem;}
+    & a {
+        color: var(--white); font-size: 1rem; font-weight: 400; background: var(--doyleBlue); 
+        padding: .25rem .5rem; border-radius: 10px; text-decoration: none;
+    }
+    & a:hover {background: var(--doyleGold);}
 }
 
 @media (max-width: 900px) {
@@ -122,8 +131,13 @@ footer {
     }
     
     main {
-        padding: 0 1rem;
-        & h4 {text-align: center;}
+        padding: 0 1.25rem;
+        & h3, & h4, & p {text-align: center;}
+    }
+    #cardContainer {grid-gap: 1rem;}
+    .card {
+        max-width: 125px;
+        & h5 {text-align: center;}
     }
     
     .overlay-card {
