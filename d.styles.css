@@ -5,6 +5,7 @@
     --white: #fff;
     --black: #111;
     --grey: #999;
+    --lightGrey: #ebebeb;
 }
     
 * {padding: 0; margin: 0; transition: .3s;}
@@ -43,18 +44,24 @@ header {
 
 
 main {
-    max-width: 1500px; 
-    margin: auto;
-    padding: 0 2rem;
     background: var(--white);
     display: flex; flex-flow: column;
     grid-gap: 1rem;
-    & h3 {font-size: 2.5rem; font-weight: 300; color: var(--doyleBlue);}
-    & h4 {
-        font-size: 1.5rem; font-weight: 300; color: var(--doyleBlue); 
-        margin-bottom: 1rem;
-    }
-    & p {margin-top: .75rem;}
+}
+#welcome {
+    display: flex; flex-flow: column;
+    padding: 3rem 2rem 4rem 2rem;
+    background: var(--lightGrey);
+    border-top: 1px solid var(--doyleBlue);
+    text-align: center;
+    & h3 {color: var(--doyleBlue); font-size: 2.25rem; font-weight: 300;}
+    & p {margin-top: .5rem;}
+}
+#products {
+    max-width: 1500px; 
+    margin: 1rem auto 2rem auto;
+    padding: 0 2rem;
+    & h4 {color: var(--doyleBlue); font-size: 1.25rem; font-weight: 300; margin-bottom: 1rem;}
 }
 #cardContainer {
     display: flex; flex-flow: row wrap;
@@ -72,6 +79,17 @@ main {
 }
 .card:hover {border-top: 10px solid var(--doyleGold); cursor: pointer;}
 
+#services {
+    background: var(--doyleBlue);
+    & div {
+        color: var(--white);
+        max-width: 1500px;
+        margin: 2rem auto;
+        padding: 0 1.25rem;
+    }
+    & h4 {font-size: 1.25rem; font-weight: 300;}
+}
+
 
 footer {
     
@@ -82,7 +100,7 @@ footer {
     bottom: 10px; right: 10px;
     height: 50px; width: 50px;
     cursor: pointer;
-    fill: var(--doyleBlue);
+    fill: var(--doyleGold);
 }
 
 .overlay {
@@ -131,16 +149,19 @@ footer {
     }
     
     main {
-        padding: 0 1.25rem;
-        & h3, & h4, & p {text-align: center;}
+        
     }
+    #welcome {padding: 2rem 2rem 3rem 2rem;}
+    #products {padding: 0 1.25rem;}
     #cardContainer {grid-gap: 1rem;}
     .card {
         max-width: 125px;
         & h5 {text-align: center;}
     }
-    
     .overlay-card {
         
+    }
+    #services {
+        & div {margin: 2rem 1.25rem;}
     }
 }
