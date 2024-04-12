@@ -22,7 +22,7 @@ nav {
     padding: 2rem;
     background: var(--doyleBlue);
     border-bottom: 4px solid var(--doyleGold);
-    & a {cursor: pointer; color: var(--white); font-size: 1.1rem; max-height: 50px; text-decoration: none;}
+    & a {cursor: pointer; color: var(--white); font-size: 1.1rem; max-height: 50px; text-decoration: none !important;}
     & a:hover {color: var(--doyleGold);}
 }
 #navAccount {margin-left: auto;}
