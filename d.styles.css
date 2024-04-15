@@ -130,11 +130,8 @@ footer {
     & h5 {color: var(--doyleBlue); font-size: 1.5rem; font-weight: 400;}
     & p {text-align: center;}
     & div {display: flex; flex-flow: column; grid-gap: .5rem;}
-    & a {
-        color: var(--white); font-size: 1rem; font-weight: 400; background: var(--doyleBlue); 
-        padding: .25rem .5rem; border-radius: 10px; text-decoration: none;
-    }
-    & a:hover {background: var(--doyleGold);}
+    & select, & button {padding: .5rem 1rem; background: var(--doyleBlue); color: var(--white); border-radius: 5px; border: none; cursor: pointer;}
+    & button:hover {background: var(--doyleGold);}
 }
 
 @media (max-width: 900px) {

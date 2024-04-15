@@ -87,8 +87,8 @@ const products = [
     { name: 'Notepads', description: 'Stay organized and jot down notes.', img: 'https://placehold.co/200', alt: 'Notepads Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Palm Cards', description: 'Promote your campaign or cause.', img: 'https://placehold.co/200', alt: 'Palm Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Pocket Folders', description: 'Keep your documents organized and professional.', img: 'https://placehold.co/200', alt: 'Pocket Folders Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Postcards', description: 'Send greetings, invitations, or promotions.', img: 'https://placehold.co/200', alt: 'Postcards Image', sizes: [{size:'4x6 Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242554'},{size:'', link:''},{size:'', link:''}]},
-    { name: 'Presentation Boards', description: 'Deliver compelling presentations.', img: 'https://placehold.co/200', alt: 'Presentation Boards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
+    { name: 'Postcards', description: 'Send greetings, invitations, or promotions.', img: 'https://placehold.co/200', alt: 'Postcards Image', sizes: [{size:'4 x 6 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242554'},{size:'5 x 7 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242555'},{size:'5.5 x 8.5 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'},{size:'6 x 9 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'}]},
+    { name: 'Presentation Boards', description: 'Deliver compelling presentations.', img: 'https://placehold.co/200', alt: 'Presentation Boards Image', sizes: [{size:'', link:''},{size:'', link:''}] },
     { name: 'Rack Cards', description: 'Advertise your services or products effectively.', img: 'https://placehold.co/200', alt: 'Rack Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Signs & Posters', description: 'Attract attention and communicate messages clearly.', img: 'https://placehold.co/200', alt: 'Signs & Posters Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Stickers', description: 'Add personality to your belongings or promotions.', img: 'https://placehold.co/200', alt: 'Stickers Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] }
@@ -134,17 +134,35 @@ function createCards() {
             overlayCard.appendChild(overlayCardDescription);
 
             if (product.sizes) {
-                const productSize = document.createElement('div');
+    const productSize = document.createElement('div');
+    const sizeSelect = document.createElement('select');
 
-                // Loop through each size object of the current product
-                product.sizes.forEach(sizeObj => {
-                    const sizeLink = document.createElement('a');
-                    sizeLink.href = sizeObj.link; // Set link from size object
-                    sizeLink.textContent = sizeObj.size; // Set text from size object
-                    productSize.appendChild(sizeLink);
-                });
-                overlayCard.appendChild(productSize);
-            }
+    // Loop through each size object of the current product
+    product.sizes.forEach(sizeObj => {
+        const option = document.createElement('option');
+        option.value = sizeObj.link; // Set value from size object link
+        option.textContent = sizeObj.size; // Set text from size object
+        sizeSelect.appendChild(option);
+    });
+
+    // Add button to trigger redirection
+    const redirectButton = document.createElement('button');
+    redirectButton.textContent = "Order Now";
+
+    // Add event listener to button to redirect user to selected link
+    redirectButton.addEventListener('click', function() {
+        const selectedLink = sizeSelect.value;
+        if (selectedLink) {
+            window.location.href = selectedLink;
+        } else {
+            alert("Please select a size first.");
+        }
+    });
+
+    productSize.appendChild(sizeSelect);
+    productSize.appendChild(redirectButton);
+    overlayCard.appendChild(productSize);
+}
 
             // Add event listener to remove overlay when clicked
             overlay.addEventListener('click', function(event) {
