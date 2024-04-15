@@ -2,6 +2,7 @@
 
 :root {
     --doyleBlue: #003882;
+    --doyleLightBlue: #3b6cad;
     --doyleGold: #b59859;
     --doyleDarkGold: #a38950;
     --white: #fff;
@@ -130,7 +131,7 @@ footer {
     & h5 {color: var(--doyleBlue); font-size: 1.5rem; font-weight: 400;}
     & p {text-align: center;}
     & div {display: flex; flex-flow: column; grid-gap: .5rem;}
-    & select, & button {padding: .5rem 1rem; background: var(--doyleBlue); color: var(--white); border-radius: 5px; border: none; cursor: pointer;}
+    & select, & button {padding: .5rem 1rem; background: var(--doyleBlue); color: var(--white); border-radius: 5px; border: none; cursor: pointer; width: 250px; text-align: center;}
     & button:hover {background: var(--doyleGold);}
 }
 

@@ -45,6 +45,8 @@
         <div>
             <h4>Services &amp; Solutions</h4>
         </div>
+        <div>
+        </div>
     </section>
     
 </main>
@@ -70,19 +72,19 @@
     
 //Product overlay
 const products = [
-    { name: 'Apparel', description: 'Browse our stylish collection of apparel.', img: 'https://placehold.co/200', alt: 'Apparel Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}]},
+    { name: 'Apparel', description: 'Browse our stylish collection of apparel.', img: 'https://placehold.co/200', alt: 'Apparel Image', sizes: [{size:'Coming Soon!', link:'#'}]},
     { name: 'Banners', description: 'Make a statement with our high-quality banners.', img: 'https://placehold.co/200', alt: 'Banners Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}]},
     { name: 'Books & Catalogs', description: 'Explore our comprehensive collection of books and catalogs.', img: 'https://placehold.co/200', alt: 'Books & Catalogs Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Brochures', description: 'Inform and engage with our professionally designed brochures.', img: 'https://placehold.co/200', alt: 'Brochures Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Business Cards', description: 'Leave a lasting impression with our premium business cards.', img: 'https://placehold.co/200', alt: 'Business Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Carbonless Forms', description: 'Efficiently capture data with our carbonless forms.', img: 'https://placehold.co/200', alt: 'Carbonless Forms Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Copies', description: 'Get crisp and clear copies of your documents.', img: 'https://placehold.co/200', alt: 'Copies Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Cups & Mugs', description: 'Enjoy your favorite beverages in style.', img: 'https://placehold.co/200', alt: 'Cups & Mugs Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}]},
+    { name: 'Cups & Mugs', description: 'Enjoy your favorite beverages in style.', img: 'https://placehold.co/200', alt: 'Cups & Mugs Image', sizes: [{size:'Coming Soon!', link:'#'}]},
     { name: 'Door Hangers', description: 'Promote with eye-catching door hangers.', img: 'https://placehold.co/200', alt: 'Door Hangers Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Envelopes', description: 'Send mail in style with our high-quality envelopes.', img: 'https://placehold.co/200', alt: 'Envelopes Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}]},
     { name: 'Labels', description: 'Organize and personalize with ease.', img: 'https://placehold.co/200', alt: 'Labels Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Letterheads', description: 'Make your correspondence stand out.', img: 'https://placehold.co/200', alt: 'Letterheads Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Magnets', description: 'Stay top of mind with custom magnets.', img: 'https://placehold.co/200', alt: 'Magnets Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
+    { name: 'Magnets', description: 'Stay top of mind with custom magnets.', img: 'https://placehold.co/200', alt: 'Magnets Image', sizes: [{size:'Coming Soon!', link:'#'}] },
     { name: 'Manuals', description: 'Provide clear instructions and information.', img: 'https://placehold.co/200', alt: 'Manuals Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Notepads', description: 'Stay organized and jot down notes.', img: 'https://placehold.co/200', alt: 'Notepads Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
     { name: 'Palm Cards', description: 'Promote your campaign or cause.', img: 'https://placehold.co/200', alt: 'Palm Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
@@ -128,41 +130,46 @@ function createCards() {
             const overlayCardHeading = document.createElement('h5');
             overlayCardHeading.textContent = product.name;
             overlayCard.appendChild(overlayCardHeading);
+            
+            const overlayImg = document.createElement('img');
+            overlayImg.src = product.img;
+            overlayImg.alt = product.alt;
+            overlayCard.appendChild(overlayImg);
 
             const overlayCardDescription = document.createElement('p');
             overlayCardDescription.textContent = product.description;
             overlayCard.appendChild(overlayCardDescription);
 
             if (product.sizes) {
-    const productSize = document.createElement('div');
-    const sizeSelect = document.createElement('select');
+                const productSize = document.createElement('div');
+                const sizeSelect = document.createElement('select');
 
-    // Loop through each size object of the current product
-    product.sizes.forEach(sizeObj => {
-        const option = document.createElement('option');
-        option.value = sizeObj.link; // Set value from size object link
-        option.textContent = sizeObj.size; // Set text from size object
-        sizeSelect.appendChild(option);
-    });
+                // Loop through each size object of the current product
+                product.sizes.forEach(sizeObj => {
+                    const option = document.createElement('option');
+                    option.value = sizeObj.link; // Set value from size object link
+                    option.textContent = sizeObj.size; // Set text from size object
+                    sizeSelect.appendChild(option);
+                });
 
-    // Add button to trigger redirection
-    const redirectButton = document.createElement('button');
-    redirectButton.textContent = "Order Now";
+                // Add button to trigger redirection
+                const redirectButton = document.createElement('button');
+                redirectButton.textContent = "Order Now";
 
-    // Add event listener to button to redirect user to selected link
-    redirectButton.addEventListener('click', function() {
-        const selectedLink = sizeSelect.value;
-        if (selectedLink) {
-            window.location.href = selectedLink;
-        } else {
-            alert("Please select a size first.");
-        }
-    });
+                // Add event listener to button to redirect user to selected link
+                redirectButton.addEventListener('click', function() {
+                    const selectedLink = sizeSelect.value;
+                    if (selectedLink) {
+                        window.location.href = selectedLink;
+                    } else {
+                        alert("Please select a size first.");
+                    }
+                });
 
-    productSize.appendChild(sizeSelect);
-    productSize.appendChild(redirectButton);
-    overlayCard.appendChild(productSize);
-}
+                productSize.appendChild(sizeSelect);
+                productSize.appendChild(redirectButton);
+                overlayCard.appendChild(productSize);
+            }
 
             // Add event listener to remove overlay when clicked
             overlay.addEventListener('click', function(event) {
