@@ -95,29 +95,29 @@
 });
 
 //Accordian handler
-    document.addEventListener('DOMContentLoaded', function() {
     const accordionItems = document.querySelectorAll('.accordion-item');
-
+    
     accordionItems.forEach(item => {
-        const header = item.querySelector('.accordion-header');
+        
+    const header = item.querySelector('.accordion-header');
 
-        header.addEventListener('click', () => {
+    header.addEventListener('click', () => {
+        const content = item.querySelector('.accordion-content');
+        const isOpen = item.classList.contains('open');
+
+        accordionItems.forEach(item => {
+            item.classList.remove('open');
             const content = item.querySelector('.accordion-content');
-            const isOpen = item.classList.contains('open');
-
-            accordionItems.forEach(item => {
-                item.classList.remove('open');
-                const content = item.querySelector('.accordion-content');
-                content.style.height = null;
-            });
-
-            if (!isOpen) {
-                item.classList.add('open');
-                content.style.height = content.scrollHeight + 25 + 'px';
-            }
+            content.style.height = null;
         });
+
+        if (!isOpen) {
+            item.classList.add('open');
+            content.style.height = content.scrollHeight + 25 + 'px';
+        }
     });
 });
+
     
 //Product overlay
 const products = [
