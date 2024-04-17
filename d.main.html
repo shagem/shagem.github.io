@@ -42,11 +42,35 @@
         </article>
     </section>
     <section id='services'>
-        <div>
-            <h4>Services &amp; Solutions</h4>
-        </div>
-        <div>
-        </div>
+        <h4>Services &amp; Solutions</h4>
+        <article>
+            <div class="accordion">
+            <div class="accordion-item">
+                <h5 class="accordion-header">Offset Printing</h5>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header">Digital Printing</h5>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header">Full Service Mailshop</h5>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h5 class="accordion-header">Fulfillment Services</h5>
+                <div class="accordion-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            </div>
+        </article>
     </section>
     
 </main>
@@ -69,37 +93,58 @@
     document.getElementById('backToTop').addEventListener('click', function(){
         document.getElementById('home').scrollIntoView({behavior: 'smooth'});
 });
+
+//Accordian handler
+    document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+
+        header.addEventListener('click', () => {
+            const content = item.querySelector('.accordion-content');
+            const isOpen = item.classList.contains('open');
+
+            accordionItems.forEach(item => {
+                item.classList.remove('open');
+                const content = item.querySelector('.accordion-content');
+                content.style.height = null;
+            });
+
+            if (!isOpen) {
+                item.classList.add('open');
+                content.style.height = content.scrollHeight + 25 + 'px';
+            }
+        });
+    });
+});
     
 //Product overlay
 const products = [
     { name: 'Apparel', description: 'Browse our stylish collection of apparel.', img: 'https://placehold.co/200', alt: 'Apparel Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Banners', description: 'Make a statement with our high-quality banners.', img: 'https://placehold.co/200', alt: 'Banners Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}]},
-    { name: 'Books & Catalogs', description: 'Explore our comprehensive collection of books and catalogs.', img: 'https://placehold.co/200', alt: 'Books & Catalogs Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Brochures', description: 'Inform and engage with our professionally designed brochures.', img: 'https://placehold.co/200', alt: 'Brochures Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Business Cards', description: 'Leave a lasting impression with our premium business cards.', img: 'https://placehold.co/200', alt: 'Business Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Carbonless Forms', description: 'Efficiently capture data with our carbonless forms.', img: 'https://placehold.co/200', alt: 'Carbonless Forms Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Copies', description: 'Get crisp and clear copies of your documents.', img: 'https://placehold.co/200', alt: 'Copies Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
+    { name: 'Banners', description: 'Make a statement with our high-quality banners.', img: 'https://placehold.co/200', alt: 'Banners Image', sizes: [{size:'Coming Soon!', link:'#'}]},
+    { name: 'Books & Catalogs', description: 'Explore our comprehensive collection of books and catalogs.', img: 'https://placehold.co/200', alt: 'Books & Catalogs Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Brochures', description: 'Inform and engage with our professionally designed brochures.', img: 'https://placehold.co/200', alt: 'Brochures Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Business Cards', description: 'Leave a lasting impression with our premium business cards.', img: 'https://placehold.co/200', alt: 'Business Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Carbonless Forms', description: 'Efficiently capture data with our carbonless forms.', img: 'https://placehold.co/200', alt: 'Carbonless Forms Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Copies', description: 'Get crisp and clear copies of your documents.', img: 'https://placehold.co/200', alt: 'Copies Image', sizes: [{size:'Coming Soon!', link:'#'}] },
     { name: 'Cups & Mugs', description: 'Enjoy your favorite beverages in style.', img: 'https://placehold.co/200', alt: 'Cups & Mugs Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Door Hangers', description: 'Promote with eye-catching door hangers.', img: 'https://placehold.co/200', alt: 'Door Hangers Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Envelopes', description: 'Send mail in style with our high-quality envelopes.', img: 'https://placehold.co/200', alt: 'Envelopes Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}]},
-    { name: 'Labels', description: 'Organize and personalize with ease.', img: 'https://placehold.co/200', alt: 'Labels Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Letterheads', description: 'Make your correspondence stand out.', img: 'https://placehold.co/200', alt: 'Letterheads Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
+    { name: 'Door Hangers', description: 'Promote with eye-catching door hangers.', img: 'https://placehold.co/200', alt: 'Door Hangers Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Envelopes', description: 'Send mail in style with our high-quality envelopes.', img: 'https://placehold.co/200', alt: 'Envelopes Image', sizes: [{size:'Coming Soon!', link:'#'}]},
+    { name: 'Labels', description: 'Organize and personalize with ease.', img: 'https://placehold.co/200', alt: 'Labels Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Letterheads', description: 'Make your correspondence stand out.', img: 'https://placehold.co/200', alt: 'Letterheads Image', sizes: [{size:'Coming Soon!', link:'#'}] },
     { name: 'Magnets', description: 'Stay top of mind with custom magnets.', img: 'https://placehold.co/200', alt: 'Magnets Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Manuals', description: 'Provide clear instructions and information.', img: 'https://placehold.co/200', alt: 'Manuals Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Notepads', description: 'Stay organized and jot down notes.', img: 'https://placehold.co/200', alt: 'Notepads Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Palm Cards', description: 'Promote your campaign or cause.', img: 'https://placehold.co/200', alt: 'Palm Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Pocket Folders', description: 'Keep your documents organized and professional.', img: 'https://placehold.co/200', alt: 'Pocket Folders Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
+    { name: 'Manuals', description: 'Provide clear instructions and information.', img: 'https://placehold.co/200', alt: 'Manuals Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Notepads', description: 'Stay organized and jot down notes.', img: 'https://placehold.co/200', alt: 'Notepads Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Palm Cards', description: 'Promote your campaign or cause.', img: 'https://placehold.co/200', alt: 'Palm Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Pocket Folders', description: 'Keep your documents organized and professional.', img: 'https://placehold.co/200', alt: 'Pocket Folders Image', sizes: [{size:'Coming Soon!', link:'#'}] },
     { name: 'Postcards', description: 'Send greetings, invitations, or promotions.', img: 'https://placehold.co/200', alt: 'Postcards Image', sizes: [{size:'4 x 6 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242554'},{size:'5 x 7 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242555'},{size:'5.5 x 8.5 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'},{size:'6 x 9 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'}]},
-    { name: 'Presentation Boards', description: 'Deliver compelling presentations.', img: 'https://placehold.co/200', alt: 'Presentation Boards Image', sizes: [{size:'', link:''},{size:'', link:''}] },
-    { name: 'Rack Cards', description: 'Advertise your services or products effectively.', img: 'https://placehold.co/200', alt: 'Rack Cards Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Signs & Posters', description: 'Attract attention and communicate messages clearly.', img: 'https://placehold.co/200', alt: 'Signs & Posters Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] },
-    { name: 'Stickers', description: 'Add personality to your belongings or promotions.', img: 'https://placehold.co/200', alt: 'Stickers Image', sizes: [{size:'', link:''},{size:'', link:''},{size:'', link:''}] }
+    { name: 'Presentation Boards', description: 'Deliver compelling presentations.', img: 'https://placehold.co/200', alt: 'Presentation Boards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Rack Cards', description: 'Advertise your services or products effectively.', img: 'https://placehold.co/200', alt: 'Rack Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Signs & Posters', description: 'Attract attention and communicate messages clearly.', img: 'https://placehold.co/200', alt: 'Signs & Posters Image', sizes: [{size:'Coming Soon!', link:'#'}] },
+    { name: 'Stickers', description: 'Add personality to your belongings or promotions.', img: 'https://placehold.co/200', alt: 'Stickers Image', sizes: [{size:'Coming Soon!', link:'#'}] }
 ];
 
-
-
-
-    
 function createCards() {
     // Get the container where the cards will be appended
     const container = document.getElementById('cardContainer');
