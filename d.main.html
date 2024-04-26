@@ -1,242 +1,308 @@
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Doyle Printing and Communications</title>
+<title>Doyle Printing & Communications</title>
 
 
-<link rel='stylesheet' href='https://seanhageman.com/d.styles.css'>
+<link rel='stylesheet' href='./output.css'>
 
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
 </head>
 
-<body>
-<!-- HTML -->
-    
-<nav id='home'>
-    <a id='navLogo'>
-    <svg><path d="m48.7,12.8c-0.9,-0.7 -1.6,-1.2 -3.3,-1.2l-8.6,0l0,0l-8.8,0l0,-11.6l-5.3,3.8l0,7.8l-8.7,0l-0.4,0l-6.7,0l0,0l-6.9,5.5l0,14c0,1.5 0.6,2 1.3,2.9c0.9,0.7 1.6,1.2 3.4,1.2l9,0l0.3,0l8.7,0l0,12l5.3,-3.8l0,-8.1l8.6,0l0.1,0l6.4,0l0,0l6.7,-5.6l0,-14c0.2,-1.5 -0.4,-2.1 -1.1,-2.9zm-34.7,18.3l-0.4,0l-9,0l0,-15.3l9,0l0.4,0l8.7,0l0,15.3l-8.7,0zm31.5,0l-8.7,0l0,0l-8.8,0l0,-15.3l8.6,0l0,0l8.8,0l0,15.3l0.1,0z"/></svg>
-    </a>
-    <a id='navProducts'>Products</a>
-    <a id='navServices'>Services &amp; Solutions</a>
-    <a id='navQuote' href='https://doyle.rocketquotes.com/storefront/form_submit.htm?i=14948'>Custom Quote</a>
-    <a id='navAccount' href='https://doyle.rocketquotes.com/storefront/account.htm'>My Account</a>
-</nav>
-<header>
-    <h1>Doyle Printing &amp; Communications <span class='tag'> - Since 1926</span></h1>
-    <h2>"A little bit of old fashioned printing mixed with modern innovation."</h2>
-</header>
-<main>
-    <section id='welcome'>
-        <h3>Welcome!</h3>
-        <p>Begin an order by selecting a product below, or submit a custom quote if your project requires more specificity.</p>
-        <p>Doyle Printing &amp; Communications is committed to delivering high quality products with excellent customer service.</p>
-    </section>
-    <section id='products'>
-        <h4>All Products A-Z</h4>
-        <article id='cardContainer'>
-            <!-- Dynamically created by Script-->
-        </article>
-    </section>
-    <section id='services'>
-        <h4>Services &amp; Solutions</h4>
-        <article>
-            <div class="accordion">
-            <div class="accordion-item">
-                <h5 class="accordion-header">Offset Printing</h5>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<body class="text-gray-900 font-regular">
+    <nav class="flex flex-col sticky items-center top-0 z-[100]">
+        <section class="max-lg:justify-center flex flex-row w-full gap-16 bg-gradient-to-b from-blue-800 to-blue-900 text-white py-4 px-8 text-sm font-light shadow-lg">
+        <div class="max-lg:hidden flex flex-row gap-1 ml-auto">
+            <i class="ri-map-pin-2-fill"></i>
+            <p>5206 46th Avenue, Hyattsville, MD 20781-2395</p>
+        </div>
+        <div class="max-lg:hidden flex flex-row gap-1">
+            <i class="ri-phone-fill"></i>
+            <p>(301) 322-4800</p>
+        </div>
+            <button class="lg:hidden text-white py-2" id="mobileMenu"><i class="ri-menu-line ri-xl"></i>
+            </button>
+        </section>
+        <section class="flex flex-col lg:flex-row w-full lg:gap-8 bg-white md:text-md font-bold shadow-lg">
+            <div class="flex flex-col items-center justify-center px-auto lg:ml-6 max-lg:flex-1 max-lg:py-4 max-lg:border-b-4 max-lg:border-gold">
+                <h1 class="text-3xl lg:text-2xl text-center font-black text-blue-900">Doyle Printing & Communications</h1>
+                <p class="text-md text-center font-light text-gold">Since 1926</p>
+            </div>
+            <div class="max-lg:hidden flex flex-col items-center justify-center lg:flex-row lg:ml-auto gap-px bg-gray-200" id="menuLinks">
+                <a class="h-full max-lg:w-full py-2 lg:px-6 lg:py-8 bg-gradient-to-b from-blue-800 to-blue-900 text-white text-center lg:border-t-4 lg:border-gold lg:hover:cursor-pointer">Home <i class="ri-home-2-line"></i></a>
+                <a class="h-full max-lg:w-full py-2 lg:px-6 lg:py-8 bg-white hover:bg-gradient-to-b hover:from-blue-800 hover:to-blue-900 text-blue-900 hover:text-white text-center lg:border-t-4 lg:border-white lg:hover:border-gold hover:cursor-pointer">Products <i class="ri-store-line font-light"></i></a>
+                <a class="h-full max-lg:w-full py-2 lg:px-6 lg:py-8 bg-white hover:hover:bg-gradient-to-b hover:from-blue-800 hover:to-blue-900 text-blue-900 hover:text-white text-center lg:border-t-4 lg:border-white lg:hover:border-gold hover:cursor-pointer">Free Quote <i class="ri-file-add-line font-light"></i></a>
+                <a class="h-full max-lg:w-full py-2 lg:px-6 lg:py-8 bg-white hover:hover:bg-gradient-to-b hover:from-blue-800 hover:to-blue-900 text-blue-900 hover:text-white text-center lg:border-t-4 lg:border-white lg:hover:border-gold hover:cursor-pointer">My Account <i class="ri-account-circle-line font-light"></i></a>
+                <a class="h-full max-lg:w-full py-2 lg:px-6 lg:py-8 bg-white hover:hover:bg-gradient-to-b hover:from-blue-800 hover:to-blue-900 text-blue-900 hover:text-white text-center lg:border-t-4 lg:border-white lg:hover:border-gold hover:cursor-pointer">FTP Upload <i class="ri-upload-cloud-line font-light"></i></a>
+            </div>
+        </section>
+    </nav>
+    <header class="flex flex-col">
+        <section id="controls-carousel" class="relative mx-auto mb-2 w-full shadow-lg" data-carousel="static">
+            <!-- Carousel Wrapper -->
+            <div class="relative h-56 overflow-hidden md:h-96 lg:rounded-b">
+                <!-- Item 1 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item="active">
+                    <img src="./src/Running_Press_lg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <!-- Photo provided by FreePik -->
+                    <div class="absolute top-0 left-0 right-0 bottom-0 p-12 flex justify-center items-center">
+                        <div class="flex flex-col bg-white bg-opacity-80 p-4 lg:p-6 rounded text-center">
+                            <h2 class="text-xl md:text-4xl font-bold">Doyle Printing & Communications Online</h2>
+                            <p class="text-lg md:text-xl font-regular">Your one-stop destination for all your printing needs!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./src/Red_Paint_lg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <!-- Photo provided by FreePik -->
+                    <div class="absolute top-0 left-0 right-0 bottom-0 p-12 flex justify-center items-center">
+                        <div class="flex flex-col bg-white bg-opacity-80 p-4 lg:p-6 rounded items-center text-center">
+                            <h2 class="text-lg lg:text-4xl font-bold">Offset & Digital Capabilities</h2>
+                            <p class="text-sm lg:text-lg font-regular">Small or large format printing, any size runs.</p>
+                            <button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-sm text-white px-4 py-1 mt-2 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./src/Delivery_Truck.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <!-- Photo provided by FreePik -->
+                    <div class="absolute top-0 left-0 right-0 bottom-0 p-12 flex justify-center items-center">
+                        <div class="flex flex-col bg-white bg-opacity-80 p-4 lg:p-6 rounded items-center text-center">
+                            <h2 class="text-lg lg:text-4xl font-bold">Delivery & Pickup</h2>
+                            <p class="text-sm lg:text-lg font-regular">A fleet of delivery trucks for ease and convenience.</p>
+                            <button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-sm text-white px-4 py-1 mt-2 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./src/Pantone_Book_lg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <!-- Photo provided by FreePik -->
+                    <div class="absolute top-0 left-0 right-0 bottom-0 p-12 flex justify-center items-center">
+                        <div class="flex flex-col bg-white bg-opacity-80 p-4 lg:p-6 rounded items-center text-center">
+                            <h2 class="text-lg lg:text-4xl font-bold">Pantone Colors</h2>
+                            <p class="text-sm lg:text-lg font-regular">Ensure color consistency across different media, materials, and products.</p>
+                            <button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-sm text-white px-4 py-1 mt-2 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+                    <img src="./src/DC_Flags_lg.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <!-- Photo provided by FreePik -->
+                    <div class="absolute top-0 left-0 right-0 bottom-0 p-12 flex justify-center items-center">
+                        <div class="flex flex-col bg-white bg-opacity-80 p-4 lg:p-6 rounded items-center text-center">
+                            <h2 class="text-lg lg:text-4xl font-bold">Made in America</h2>
+                            <p class="text-sm lg:text-lg font-regular">Proudly printed in America by union labor.</p>
+                            <button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-sm text-white px-4 py-1 mt-2 rounded-lg">Learn More</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h5 class="accordion-header">Digital Printing</h5>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- Slider Controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-1 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white bg-opacity-40 group-hover:bg-opacity-60 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-1 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white bg-opacity-40 group-hover:bg-opacity-60 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </section>
+    </header>
+    <main class="flex flex-col">
+        <!-- Featured Products-->
+        <section class="flex flex-col mx-auto mb-2 max-w-screen-xxl">
+            <div class="m-8 text-center">
+                <h3 class="text-lg lg:text-xl font-semibold">FEATURED PRODUCTS</h3>
+                <p class="text-sm lg:text-lg">Explore some of our most popular items.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2 lg:gap-8 mx-2 lg:flex lg:flex-row lg:flex-wrap lg:justify-evenly">
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="p-4 lg:max-h-[300px]" src="https://placeholder.co/400" alt="product image" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a class="w-fit block" href="#">
+                            <h5 class="w-fit text-md font-semibold tracking-tight">Placeholder Item</h5>
+                        </a>
+                        <div class="flex flex-col mt-2 gap-1">
+                            <span class="text-sm font-semibold">Starting at: $$$</span>
+                            <a class="w-fit" href="#"><button class="bg-gradient-to-b from-blue-800 to-blue-900 hover:from-gold hover:to-dark-gold w-fit text-xs text-white px-4 py-1 rounded-lg">Add to Cart</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h5 class="accordion-header">Full Service Mailshop</h5>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+        </section>
+        <!-- Additional Info Hero -->
+        <section class="flex flex-col bg-gray-200 w-full mt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 max-w-screen-xl w-full mx-auto my-8 gap-4">
+                <article class="flex flex-col items-center text-center px-4">
+                    <h4 class="text-lg lg:text-xl font-semibold pb-4">GET IN TOUCH!</h4>
+                    <h5 class="text-lg font-semibold"><i class="ri-map-pin-2-fill"></i> Location</h5>
+                    <div class="text-md">
+                        <p>5206 46th Avenue,</p>
+                        <p>Hyattsville, Maryland 20781-2395</p>
+                    </div>
+                    <h5 class="text-lg font-semibold mt-8"><i class="ri-time-line"></i> Hours of Operations</h5>
+                    <p class="text-md">Monday - Friday, 7:00am to 5:00pm</p>
+                    <h5 class="text-lg font-semibold mt-8"><i class="ri-phone-fill"></i> Phone</h5>
+                    <p class="text-md">(301) 322-4800</p>
+                    <h5 class="text-lg font-semibold mt-8"><i class="ri-printer-fill"></i> Fax</h5>
+                    <p class="text-md">(301) 322-2860</p>
+                    <h5 class="text-lg font-semibold mt-8"><i class="ri-global-fill"></i> Main Website</h5>
+                    <a href="https://doyleprint.com"><p class="text-md underline">DoylePrint.com <i class="ri-link"></i></p></a>
+                </article>
+                <article class="flex flex-col col-span-2 px-4">
+                    <div>
+                        <h4 class="text-lg max-lg:text-center lg:text-xl font-semibold italic pb-4 max-lg:mt-4 border-b-2 border-gray-900">A LITTLE "OLD" FASHIONED PRINTING MIXED WITH MODERN INNOVATION</h4>
+                        <p class="text-md mt-4">At Doyle Printing & Communications, we're more than just a print shop — we're your partner in printing success. Contact us today to discuss your printing needs and discover how we can help bring your vision to life!</p>
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-semibold mt-4">Why Choose Us?</h5>
+                        <ul class="list-disc list-inside">
+                            <li class="mt-4"><span class="font-semibold">Quality Assurance:</span> We are committed to delivering the highest quality prints that exceed your expectations. Our meticulous attention to detail and quality control processes ensure that every print job meets our stringent standards.</li>
+                            <li class="mt-4"><span class="font-semibold">Fast Turnaround Times:</span> We understand the importance of deadlines, which is why we offer quick turnaround times without compromising on quality. Whether you need prints in a hurry or have a tight deadline to meet, you can rely on us to deliver on time, every time.</li>
+                            <li class="mt-4"><span class="font-semibold">Expertise and Experience:</span> With our team of experienced printing professionals, you can trust us to handle your projects with precision and expertise. From design advice to technical support, we're here to help you every step of the way.</li>
+                            <li class="mt-4"><span class="font-semibold">Customer Satisfaction:</span> Your satisfaction is our top priority. We take pride in building long-lasting relationships with our clients by providing exceptional customer service and delivering results that exceed expectations.</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
-            <div class="accordion-item">
-                <h5 class="accordion-header">Fulfillment Services</h5>
-                <div class="accordion-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-            </div>
-        </article>
-    </section>
-    
-</main>
-<footer>
-    
-</footer>    
-    
+        </section>
+        <!-- Call to Action -->
+        <section>
 
-<svg id='backToTop'><path d="m27.32,14.74l0,30.94l-5.08,0l0,-30.94l-13.63,13.63l-3.61,-3.58l19.78,-19.78l19.78,19.78l-3.61,3.58l-13.63,-13.63z"></path></svg>
+        </section>
+    </main>
+    <footer>
 
-    
+    </footer>
+
 <script>
-//Nav scroll handlers
-    document.getElementById('navProducts').addEventListener('click', function(){
-        document.getElementById('products').scrollIntoView({behavior: 'smooth'});
-});
-    document.getElementById('navServices').addEventListener('click', function(){
-        document.getElementById('services').scrollIntoView({behavior: 'smooth'});
-});
-    document.getElementById('backToTop').addEventListener('click', function(){
-        document.getElementById('home').scrollIntoView({behavior: 'smooth'});
-});
 
-//Accordian handler
-    const accordionItems = document.querySelectorAll('.accordion-item');
-    
-    accordionItems.forEach(item => {
-        
-    const header = item.querySelector('.accordion-header');
-
-    header.addEventListener('click', () => {
-        const content = item.querySelector('.accordion-content');
-        const isOpen = item.classList.contains('open');
-
-        accordionItems.forEach(item => {
-            item.classList.remove('open');
-            const content = item.querySelector('.accordion-content');
-            content.style.height = null;
-        });
-
-        if (!isOpen) {
-            item.classList.add('open');
-            content.style.height = content.scrollHeight + 25 + 'px';
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.addEventListener('click', function(){
+        const links = document.getElementById('menuLinks');
+        if (links.classList.contains('max-lg:hidden')) {
+        links.classList.remove('max-lg:hidden');
+        } else {
+        links.classList.add('max-lg:hidden');
         }
     });
-});
 
-    
-//Product overlay
-const products = [
-    { name: 'Apparel', description: 'Browse our stylish collection of apparel.', img: 'https://placehold.co/200', alt: 'Apparel Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Banners', description: 'Make a statement with our high-quality banners.', img: 'https://placehold.co/200', alt: 'Banners Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Books & Catalogs', description: 'Explore our comprehensive collection of books and catalogs.', img: 'https://placehold.co/200', alt: 'Books & Catalogs Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Brochures', description: 'Inform and engage with our professionally designed brochures.', img: 'https://placehold.co/200', alt: 'Brochures Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Business Cards', description: 'Leave a lasting impression with our premium business cards.', img: 'https://placehold.co/200', alt: 'Business Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Carbonless Forms', description: 'Efficiently capture data with our carbonless forms.', img: 'https://placehold.co/200', alt: 'Carbonless Forms Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Copies', description: 'Get crisp and clear copies of your documents.', img: 'https://placehold.co/200', alt: 'Copies Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Cups & Mugs', description: 'Enjoy your favorite beverages in style.', img: 'https://placehold.co/200', alt: 'Cups & Mugs Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Door Hangers', description: 'Promote with eye-catching door hangers.', img: 'https://placehold.co/200', alt: 'Door Hangers Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Envelopes', description: 'Send mail in style with our high-quality envelopes.', img: 'https://placehold.co/200', alt: 'Envelopes Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Labels', description: 'Organize and personalize with ease.', img: 'https://placehold.co/200', alt: 'Labels Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Letterheads', description: 'Make your correspondence stand out.', img: 'https://placehold.co/200', alt: 'Letterheads Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Magnets', description: 'Stay top of mind with custom magnets.', img: 'https://placehold.co/200', alt: 'Magnets Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Manuals', description: 'Provide clear instructions and information.', img: 'https://placehold.co/200', alt: 'Manuals Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Notepads', description: 'Stay organized and jot down notes.', img: 'https://placehold.co/200', alt: 'Notepads Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Palm Cards', description: 'Promote your campaign or cause.', img: 'https://placehold.co/200', alt: 'Palm Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Pocket Folders', description: 'Keep your documents organized and professional.', img: 'https://placehold.co/200', alt: 'Pocket Folders Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Postcards', description: 'Send greetings, invitations, or promotions.', img: 'https://placehold.co/200', alt: 'Postcards Image', sizes: [{size:'4 x 6 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242554'},{size:'5 x 7 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242555'},{size:'5.5 x 8.5 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'},{size:'6 x 9 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'}]},
-    { name: 'Presentation Boards', description: 'Deliver compelling presentations.', img: 'https://placehold.co/200', alt: 'Presentation Boards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Rack Cards', description: 'Advertise your services or products effectively.', img: 'https://placehold.co/200', alt: 'Rack Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Signs & Posters', description: 'Attract attention and communicate messages clearly.', img: 'https://placehold.co/200', alt: 'Signs & Posters Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Stickers', description: 'Add personality to your belongings or promotions.', img: 'https://placehold.co/200', alt: 'Stickers Image', sizes: [{size:'Coming Soon!', link:'#'}] }
-];
-
-function createCards() {
-    // Get the container where the cards will be appended
-    const container = document.getElementById('cardContainer');
-
-    // Loop through each product in the products array
-    products.forEach(product => {
-
-        // Create card
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card');
-
-        const img = document.createElement('img');
-        img.src = product.img;
-        img.alt = product.alt;
-
-        const heading = document.createElement('h5');
-        heading.textContent = product.name;
-
-        // Add event listener to show overlay when clicked
-        cardDiv.addEventListener('click', function() {
-            // Create overlay
-            const overlay = document.createElement('div');
-            overlay.classList.add('overlay');
-
-            const overlayCard = document.createElement('div');
-            overlayCard.classList.add('overlay-card');
-
-            const overlayCardHeading = document.createElement('h5');
-            overlayCardHeading.textContent = product.name;
-            overlayCard.appendChild(overlayCardHeading);
-            
-            const overlayImg = document.createElement('img');
-            overlayImg.src = product.img;
-            overlayImg.alt = product.alt;
-            overlayCard.appendChild(overlayImg);
-
-            const overlayCardDescription = document.createElement('p');
-            overlayCardDescription.textContent = product.description;
-            overlayCard.appendChild(overlayCardDescription);
-
-            if (product.sizes) {
-                const productSize = document.createElement('div');
-                const sizeSelect = document.createElement('select');
-
-                // Loop through each size object of the current product
-                product.sizes.forEach(sizeObj => {
-                    const option = document.createElement('option');
-                    option.value = sizeObj.link; // Set value from size object link
-                    option.textContent = sizeObj.size; // Set text from size object
-                    sizeSelect.appendChild(option);
-                });
-
-                // Add button to trigger redirection
-                const redirectButton = document.createElement('button');
-                redirectButton.textContent = "Order Now";
-
-                // Add event listener to button to redirect user to selected link
-                redirectButton.addEventListener('click', function() {
-                    const selectedLink = sizeSelect.value;
-                    if (selectedLink) {
-                        window.location.href = selectedLink;
-                    } else {
-                        alert("Please select a size first.");
-                    }
-                });
-
-                productSize.appendChild(sizeSelect);
-                productSize.appendChild(redirectButton);
-                overlayCard.appendChild(productSize);
-            }
-
-            // Add event listener to remove overlay when clicked
-            overlay.addEventListener('click', function(event) {
-                if (event.target === overlay) {
-                    overlay.remove();
-                }
-            });
-
-            // Append overlay to the DOM
-            overlay.appendChild(overlayCard);
-            document.body.appendChild(overlay);
-        });
-
-        cardDiv.appendChild(img);
-        cardDiv.appendChild(heading);
-        container.appendChild(cardDiv);
-    });
-}
-
-createCards();
-     
-    
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </body>
