@@ -5,6 +5,8 @@
 
 
 
+<script src="https://cdn.tailwindcss.com"></script>
+
 <link rel='stylesheet' href='https://seanhageman.com/output.css'>
 
 
@@ -298,6 +300,7 @@
 
     const mobileMenu = document.getElementById('mobileMenu');
     mobileMenu.addEventListener('click', function(){
+        console.log('Success Test 1')
         const links = document.getElementById('menuLinks');
         if (links.classList.contains('max-lg:hidden')) {
         links.classList.remove('max-lg:hidden');
