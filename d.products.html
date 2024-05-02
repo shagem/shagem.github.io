@@ -25,7 +25,7 @@
             <i class="ri-phone-fill"></i>
             <p>(301) 322-4800</p>
         </div>
-            <button class="lg:hidden text-white py-2" id="mobileMenu"><i class="ri-menu-line ri-xl"></i>
+            <button type="button" class="lg:hidden text-white py-2" id="mobileMenu"><i class="ri-menu-line ri-xl"></i>
             </button>
         </section>
         <section class="flex flex-col lg:flex-row w-full lg:gap-8 bg-white md:text-base font-bold shadow-lg">
@@ -45,7 +45,54 @@
         
     </header>
     <main class="flex flex-col">
-        
+        <section>
+            <div class="flex items-center justify-center gap-4 py-4 md:py-8 flex-wrap" id="buttonContainer">
+                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full active:bg-red-600">All Products</button>
+                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Copy Center</button>
+                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Office Supplies</button>
+                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Marketing Supplies</button>
+                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Large Format</button>
+                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Specialty Items</button>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto mb-8 max-w-screen-xxl">
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+                <div>
+                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
@@ -65,6 +112,13 @@
         } else {
         links.classList.add('max-lg:hidden');
         }
+    });
+
+    let btnGroup = document.getElementById('buttonContainer');
+    Array.from(btnGroup.children).forEach(element => {
+        element.addEventListener('click', function(){
+            console.log('success');
+        });
     });
 
 </script>
