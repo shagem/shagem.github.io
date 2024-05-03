@@ -5,7 +5,7 @@
 
 <!-- Look, I know I'm not supposed to use the CDN but my hands are tied -->
 <script src="https://cdn.tailwindcss.com"></script>
-
+ 
 <link rel='stylesheet' href='https://seanhageman.com/output.css'>
 
 
@@ -192,8 +192,24 @@ const container = document.getElementById('productContainer');
         productName.classList.add('font-regular', 'text-base', 'mt-2', 'md:text-xl', 'cursor-pointer');
         productName.textContent = products[i].name;
 
-        productName.addEventListener('click', () => {
-        console.log('Product Fork Success')
+    productName.addEventListener('click', () => {
+        const overlay = document.createElement('div');
+        overlay.classList.add('bg-[rgba(0,0,0,.7)]', 'h-full', 'w-full', 'fixed', 'top-0', 'left-0', 'z-[1000]', 'flex', 'items-center', 'justify-center');
+        document.body.appendChild(overlay);
+
+        const forkCard = document.createElement('div');
+        forkCard.classList.add('bg-white', 'h-4/6', 'w-5/6', 'fixed', 'md:h-3/6', 'md:w-3/6', 'rounded-lg');
+        overlay.appendChild(forkCard);
+
+        //Exit overlay handler
+        const exitButton = document.createElement('button');
+        exitButton.innerHTML = '<i class="ri-close-large-line ri-xl"></i>'
+        exitButton.classList.add('absolute', 'top-0', 'left-0', 'p-4', 'text-gray-800', 'cursor-pointer');
+        forkCard.appendChild(exitButton);
+
+        exitButton.addEventListener('click', () => {
+            overlay.remove();
+        });
     });
 
         productFork.appendChild(productName);
