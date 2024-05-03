@@ -45,52 +45,66 @@
         
     </header>
     <main class="flex flex-col">
-        <section>
-            <div class="flex items-center justify-center gap-4 py-4 md:py-8 flex-wrap" id="buttonContainer">
-                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full active:bg-red-600">All Products</button>
-                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Copy Center</button>
-                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Office Supplies</button>
-                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Marketing Supplies</button>
-                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Large Format</button>
-                <button type="button" class="font-regular text-base text-white bg-gradient-to-b from-blue-800 to-blue-900 px-8 py-2 rounded-full">Specialty Items</button>
+        <!-- Products Filter Buttons -->
+        <section class="flex justify-center mt-8">
+            <div class="inline-flex max-md:flex-col max-md:w-full max-md:mx-4 md:rounded-md md:shadow-sm" role="group" id="filterButtons">
+                <button type="button" data-filter="all" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white border border-gray-300 md:rounded-l-lg">
+                    All Products
+                </button>
+                <button type="button" data-filter="copyCenter" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white md:border-t max-md:border-x md:border-b md:border-r border-gray-300">
+                    Copy Center
+                </button>
+                <button type="button" data-filter="officeSupplies" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white border-t max-md:border-x md:border-b md:border-r border-gray-300">
+                    Office Supplies
+                </button>
+                <button type="button" data-filter="marketingSupplies" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white border-t max-md:border-x md:border-b md:border-r border-gray-300">
+                    Marketing Supplies
+                </button>
+                <button type="button" data-filter="largeFormat" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white border-t max-md:border-x md:border-b border-gray-300">
+                    Large Format
+                </button>
+                <button type="button" data-filter="specialtyItems" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white border border-gray-300 md:rounded-r-lg">
+                    Specialty Items
+                </button>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto mb-8 max-w-screen-xxl">
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
-                <div>
-                    <img class="h-auto w-full rounded-lg" src="https://placeholder.co/400" alt="Placeholder Image">
-                </div>
+        </section>
+        <!-- Product Branches -->
+        <section class="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 mx-auto px-4 my-8 max-w-screen-xxl">
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="h-auto max-w-full rounded-lg" src="https://placeholder.co/600" alt="Placeholder Image">
+                <h5 class="font-semibold text-xl mt-2">Placeholder</h5>
             </div>
         </section>
     </main>
@@ -114,12 +128,37 @@
         }
     });
 
-    let btnGroup = document.getElementById('buttonContainer');
-    Array.from(btnGroup.children).forEach(element => {
-        element.addEventListener('click', function(){
-            console.log('success');
+// Get all filter buttons
+const filterButtons = document.querySelectorAll('.filter-btn');
+
+// Add click event listener to each button
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Reset background color of all buttons
+        filterButtons.forEach(btn => {
+            btn.classList.remove('bg-gradient-to-b', 'from-blue-800', 'to-blue-900', 'text-white'); // Change to the default background color class
+            btn.classList.add('bg-white', 'text-gray-900'); // Change to the default background color class
         });
+        
+        // Change background color of the clicked button
+        button.classList.remove('bg-white', 'text-gray-900'); // Remove the default background color class
+        button.classList.add('bg-gradient-to-b', 'from-blue-800', 'to-blue-900', 'text-white'); // Add the new background color class
+
+        // Get the filter value associated with the clicked button
+        const filter = button.getAttribute('data-filter');
+
+        // Call a function to filter products based on the selected filter
+        filterProducts(filter);
     });
+});
+
+document.querySelector('[data-filter="all"]').classList.add('bg-gradient-to-b', 'from-blue-800', 'to-blue-900', 'text-white');
+
+// Function to filter products based on the selected filter
+function filterProducts(filter) {
+// Implement your filtering logic here
+console.log(`Filtering products by: ${filter}`);
+}
 
 </script>
 
