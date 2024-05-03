@@ -5,7 +5,7 @@
 
 <!-- Look, I know I'm not supposed to use the CDN but my hands are tied -->
 <script src="https://cdn.tailwindcss.com"></script>
- 
+
 <link rel='stylesheet' href='https://seanhageman.com/output.css'>
 
 
@@ -46,7 +46,8 @@
     </header>
     <main class="flex flex-col">
         <!-- Products Filter Buttons -->
-        <section class="flex justify-center mt-8">
+        <section class="flex flex-col justify-center mt-8 mx-4 gap-2 items-center">
+            <p class="text-center">Filter Products<i class="ri-filter-fill text-blue-900"></i></p>
             <div class="inline-flex max-md:flex-col max-md:w-full max-md:mx-4 md:rounded-md md:shadow-sm" role="group" id="filterButtons">
                 <button type="button" data-filter="all" class="filter-btn px-4 py-2 text-sm font-regular text-gray-900 bg-white border border-gray-300 md:rounded-l-lg">
                     All Products
