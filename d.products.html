@@ -85,29 +85,30 @@
 
 //Products Array, maintained by external CSV
 const products = [
-    { name: 'Apparel', img: 'https://placehold.co/600', alt: 'Apparel Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Banners', img: 'https://placehold.co/600', alt: 'Banners Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Books & Catalogs', img: 'https://placehold.co/600', alt: 'Books & Catalogs Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Brochures', img: 'https://placehold.co/600', alt: 'Brochures Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Business Cards', img: 'https://placehold.co/600', alt: 'Business Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Carbonless Forms', img: 'https://placehold.co/600', alt: 'Carbonless Forms Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Copies', img: 'https://placehold.co/600', alt: 'Copies Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Cups & Mugs', img: 'https://placehold.co/600', alt: 'Cups & Mugs Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Door Hangers', img: 'https://placehold.co/600', alt: 'Door Hangers Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Envelopes', img: 'https://placehold.co/600', alt: 'Envelopes Image', sizes: [{size:'Coming Soon!', link:'#'}]},
-    { name: 'Labels', img: 'https://placehold.co/600', alt: 'Labels Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Letterheads', img: 'https://placehold.co/600', alt: 'Letterheads Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Magnets', img: 'https://placehold.co/600', alt: 'Magnets Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Manuals', img: 'https://placehold.co/600', alt: 'Manuals Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Notepads', img: 'https://placehold.co/600', alt: 'Notepads Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Palm Cards', img: 'https://placehold.co/600', alt: 'Palm Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Pocket Folders', img: 'https://placehold.co/600', alt: 'Pocket Folders Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Postcards', img: 'https://placehold.co/600', alt: 'Postcards Image', sizes: [{size:'4 x 6 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242554'},{size:'5 x 7 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242555'},{size:'5.5 x 8.5 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'},{size:'6 x 9 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'}]},
-    { name: 'Presentation Boards', img: 'https://placehold.co/600', alt: 'Presentation Boards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Rack Cards', img: 'https://placehold.co/600', alt: 'Rack Cards Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Signs & Posters', img: 'https://placehold.co/600', alt: 'Signs & Posters Image', sizes: [{size:'Coming Soon!', link:'#'}] },
-    { name: 'Stickers', img: 'https://placehold.co/600', alt: 'Stickers Image', sizes: [{size:'Coming Soon!', link:'#'}] }
+    { name: 'Apparel', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Apparel Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'specialtyItems'},
+    { name: 'Banners', img: 'https://seanhageman.com/d.imgs/Banner_Stock_Image.jpg', alt: 'Banners Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'largeFormat'},
+    { name: 'Books & Catalogs', img: 'https://seanhageman.com/d.imgs/Book_Stock_Image.jpg', alt: 'Books & Catalogs Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'copyCenter' },
+    { name: 'Brochures', img: 'https://seanhageman.com/d.imgs/Brochure_Stock_Image.jpg', alt: 'Brochures Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'marketingSupplies' },
+    { name: 'Business Cards', img: 'https://seanhageman.com/d.imgs/BusinessCard_Stock_Image.jpg', alt: 'Business Cards Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'marketingSupplies' },
+    { name: 'Carbonless Forms', img: 'https://placeholder.co/600', alt: 'Carbonless Forms Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'copyCenter' },
+    { name: 'Copies', img: 'https://seanhageman.com/d.imgs/Copies_Stock_Image.jpg', alt: 'Copies Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'copyCenter' },
+    { name: 'Cups & Mugs', img: 'https://seanhageman.com/d.imgs/Mug_Stock_Image.jpg', alt: 'Cups & Mugs Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'specialtyItems'},
+    { name: 'Door Hangers', img: 'https://seanhageman.com/d.imgs/Doorhanger_Stock_Image.jpg', alt: 'Door Hangers Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'marketingSupplies' },
+    { name: 'Envelopes', img: 'https://seanhageman.com/d.imgs/Envelope_Stock_Image.jpg', alt: 'Envelopes Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'officeSupplies'},
+    { name: 'Labels', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Labels Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'officeSupplies' },
+    { name: 'Letterheads', img: 'https://seanhageman.com/d.imgs/Letterhead_Stock_Image.jpg', alt: 'Letterheads Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'officeSupplies' },
+    { name: 'Magnets', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Magnets Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'specialtyItems' },
+    { name: 'Manuals', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Manuals Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'officeSupplies' },
+    { name: 'Notepads', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Notepads Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'officeSupplies' },
+    { name: 'Palm Cards', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Palm Cards Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'marketingSupplies' },
+    { name: 'Pocket Folders', img: 'https://seanhageman.com/d.imgs/PocketFolder_Stock_Image.jpg', alt: 'Pocket Folders Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'officeSupplies' },
+    { name: 'Postcards', img: 'https://seanhageman.com/d.imgs/Postcard_Stock_Image.jpg', alt: 'Postcards Image', sizes: [{size:'4 x 6 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242554'},{size:'5 x 7 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242555'},{size:'5.5 x 8.5 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'},{size:'6 x 9 inch Postcard', link:'https://doyle.rocketquotes.com/storefront/f_product.htm?i=242556'}], type: 'Marketing Supplies'},
+    { name: 'Presentation Boards', img: 'https://seanhageman.com/d.imgs/Presentation_Stock_Image.jpg', alt: 'Presentation Boards Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'largeFormat' },
+    { name: 'Rack Cards', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Rack Cards Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'marketingSupplies' },
+    { name: 'Signs & Posters', img: 'https://seanhageman.com/d.imgs/Shirt_Stock_Image.jpg', alt: 'Signs & Posters Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'largeFormat' },
+    { name: 'Stickers', img: 'https://seanhageman.com/d.imgs/Sticker_Stock_Image.jpg', alt: 'Stickers Image', sizes: [{size:'Coming Soon!', link:'#'}], type: 'specialtyItems' }
 ];
+
 
 
 //Mobile menu handler
@@ -150,73 +151,90 @@ document.querySelector('[data-filter="all"]').classList.add('bg-gradient-to-b', 
 
 // Function to filter products based on the selected filter
 function filterProducts(filter) {
-// Implement your filtering logic here
-console.log(`Filtering products by: ${filter}`);
+    // Get all product forks
+    const productForks = document.querySelectorAll('#productContainer > div');
+
+    // Loop through each product fork
+    productForks.forEach(fork => {
+        const productName = fork.querySelector('h5').textContent;
+        const productType = products.find(product => product.name === productName).type;
+
+        console.log(filter);
+
+        // Check if the product type matches the filter or if the filter is "all"
+        if (filter === 'all' || productType === filter) {
+            fork.style.display = 'flex'; // Show the product fork
+        } else {
+            fork.style.display = 'none'; // Hide the product fork
+        }
+    });
 }
 
-//Product Fork Handler
+// Function to create overlay with product name
+function createOverlay(productName) {
+    const overlay = document.createElement('div');
+    overlay.classList.add('bg-[rgba(0,0,0,.7)]', 'h-full', 'w-full', 'fixed', 'top-0', 'left-0', 'z-[1000]', 'flex', 'items-center', 'justify-center');
+
+    const forkCard = document.createElement('div');
+    forkCard.classList.add('bg-white', 'h-4/6', 'w-5/6', 'fixed', 'md:h-3/6', 'md:w-3/6', 'rounded-lg', 'flex', 'flex-col', 'items-center');
+    overlay.appendChild(forkCard);
+
+    // Append product name to fork card as h6 tag
+    const productNameHeader = document.createElement('h6');
+    productNameHeader.classList.add('text-xl', 'font-semibold', 'mt-8', 'mb-2');
+    productNameHeader.textContent = productName;
+    forkCard.appendChild(productNameHeader);
+
+    // Exit button
+    const exitButton = document.createElement('button');
+    exitButton.innerHTML = '<i class="ri-close-large-line ri-xl"></i>';
+    exitButton.classList.add('absolute', 'top-0', 'right-0', 'p-4', 'text-gray-800', 'cursor-pointer');
+    forkCard.appendChild(exitButton);
+
+    // Exit overlay when exit button is clicked
+    exitButton.addEventListener('click', () => {
+        overlay.remove();
+    });
+
+    return overlay;
+}
+
+// Function to handle click on product image or name
+function handleProductClick(productName) {
+    const overlay = createOverlay(productName);
+    document.body.appendChild(overlay);
+}
+
+// Product forks creation
 const container = document.getElementById('productContainer');
-    for(let i = 0; i < products.length; i++) {
-        const productFork = document.createElement('div');
-        productFork.classList.add('flex', 'flex-col', 'items-center', 'text-center');
+for (let i = 0; i < products.length; i++) {
+    const productFork = document.createElement('div');
+    productFork.classList.add('flex', 'flex-col', 'items-center', 'text-center');
 
-        const productImg = document.createElement("img");
+    const productImg = document.createElement("img");
+    productImg.classList.add('lg:h-[500px]', 'h-[200px]', 'w-[500px]', 'rounded-lg', 'cursor-pointer', 'grow');
+    productImg.src = products[i].img;
+    productImg.alt = products[i].alt;
 
-        productImg.classList.add('h-auto', 'max-w-full', 'rounded-lg', 'cursor-pointer');
-        productImg.src = products[i].img;
-        productImg.alt = products[i].alt;
-
+    // Add click event listener to product image and name
     productImg.addEventListener('click', () => {
-        const overlay = document.createElement('div');
-        overlay.classList.add('bg-[rgba(0,0,0,.7)]', 'h-full', 'w-full', 'fixed', 'top-0', 'left-0', 'z-[1000]', 'flex', 'items-center', 'justify-center');
-        document.body.appendChild(overlay);
-
-        const forkCard = document.createElement('div');
-        forkCard.classList.add('bg-white', 'h-4/6', 'w-5/6', 'fixed', 'md:h-3/6', 'md:w-3/6', 'rounded-lg');
-        overlay.appendChild(forkCard);
-
-        //Exit overlay handler
-        const exitButton = document.createElement('button');
-        exitButton.innerHTML = '<i class="ri-close-large-line ri-xl"></i>'
-        exitButton.classList.add('absolute', 'top-0', 'left-0', 'p-4', 'text-gray-800', 'cursor-pointer');
-        forkCard.appendChild(exitButton);
-
-        exitButton.addEventListener('click', () => {
-            overlay.remove();
-        });
+        handleProductClick(products[i].name);
     });
 
-        productFork.appendChild(productImg);
+    productFork.appendChild(productImg);
 
-        const productName = document.createElement('h5');
+    const productName = document.createElement('h5');
+    productName.classList.add('font-regular', 'text-base', 'mt-2', 'md:text-xl', 'cursor-pointer');
+    productName.textContent = products[i].name;
 
-        productName.classList.add('font-regular', 'text-base', 'mt-2', 'md:text-xl', 'cursor-pointer');
-        productName.textContent = products[i].name;
-
+    // Add click event listener to product name
     productName.addEventListener('click', () => {
-        const overlay = document.createElement('div');
-        overlay.classList.add('bg-[rgba(0,0,0,.7)]', 'h-full', 'w-full', 'fixed', 'top-0', 'left-0', 'z-[1000]', 'flex', 'items-center', 'justify-center');
-        document.body.appendChild(overlay);
-
-        const forkCard = document.createElement('div');
-        forkCard.classList.add('bg-white', 'h-4/6', 'w-5/6', 'fixed', 'md:h-3/6', 'md:w-3/6', 'rounded-lg');
-        overlay.appendChild(forkCard);
-
-        //Exit overlay handler
-        const exitButton = document.createElement('button');
-        exitButton.innerHTML = '<i class="ri-close-large-line ri-xl"></i>'
-        exitButton.classList.add('absolute', 'top-0', 'left-0', 'p-4', 'text-gray-800', 'cursor-pointer');
-        forkCard.appendChild(exitButton);
-
-        exitButton.addEventListener('click', () => {
-            overlay.remove();
-        });
+        handleProductClick(products[i].name);
     });
 
-        productFork.appendChild(productName);
-
-        container.appendChild(productFork);
-    }
+    productFork.appendChild(productName);
+    container.appendChild(productFork);
+}
 
 
 
