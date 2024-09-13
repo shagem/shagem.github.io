@@ -66,3 +66,24 @@
         setTabIndexes();
     });
 })();
+
+//My Thoughts collapsible card function
+(function() {
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', function () {
+            const cardBody = card.querySelector('.cardBody');
+            const arrowIcon = card.querySelector('.arrow-icon'); // Select the SVG icon
+
+            // Check if cardBody is collapsed
+            if (cardBody.style.maxHeight) {
+                // Collapse cardBody and rotate the icon back
+                cardBody.style.maxHeight = null;
+                arrowIcon.classList.remove('rotate-180'); // Rotates back to initial state
+            } else {
+                // Expand cardBody and rotate the icon
+                cardBody.style.maxHeight = cardBody.scrollHeight + 'px';
+                arrowIcon.classList.add('rotate-180'); // Rotates 180 degrees
+            }
+        });
+    });
+})();

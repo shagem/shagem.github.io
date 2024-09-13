@@ -52,4 +52,19 @@
       setTabIndexes();
     });
   })();
+  (function() {
+    document.querySelectorAll(".card").forEach((card) => {
+      card.addEventListener("click", function() {
+        const cardBody = card.querySelector(".cardBody");
+        const arrowIcon = card.querySelector(".arrow-icon");
+        if (cardBody.style.maxHeight) {
+          cardBody.style.maxHeight = null;
+          arrowIcon.classList.remove("rotate-180");
+        } else {
+          cardBody.style.maxHeight = cardBody.scrollHeight + "px";
+          arrowIcon.classList.add("rotate-180");
+        }
+      });
+    });
+  })();
 })();
