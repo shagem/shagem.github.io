@@ -53,16 +53,28 @@
     });
   })();
   (function() {
-    document.querySelectorAll(".card").forEach((card) => {
+    document.querySelectorAll(".thoughtsCard").forEach((card) => {
       card.addEventListener("click", function() {
-        const cardBody = card.querySelector(".cardBody");
+        const thoughtsCardBody = card.querySelector(".thoughtsCardBody");
         const arrowIcon = card.querySelector(".arrow-icon");
-        if (cardBody.style.maxHeight) {
-          cardBody.style.maxHeight = null;
+        if (thoughtsCardBody.style.maxHeight) {
+          thoughtsCardBody.style.maxHeight = null;
           arrowIcon.classList.remove("rotate-180");
         } else {
-          cardBody.style.maxHeight = cardBody.scrollHeight + "px";
+          thoughtsCardBody.style.maxHeight = thoughtsCardBody.scrollHeight + "px";
           arrowIcon.classList.add("rotate-180");
+        }
+      });
+    });
+  })();
+  (function() {
+    document.querySelectorAll(".projectCard").forEach((card) => {
+      card.addEventListener("click", function() {
+        const projectCardBody = card.querySelector(".projectCardBody");
+        if (projectCardBody.style.maxHeight) {
+          projectCardBody.style.maxHeight = null;
+        } else {
+          projectCardBody.style.maxHeight = projectCardBody.scrollHeight + "px";
         }
       });
     });
