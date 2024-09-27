@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.thoughtsCard {
+.slidingCard {
     width: 100%;
     padding: 1.5rem;
     background-color: #262626;
@@ -13,20 +13,7 @@
     cursor: pointer;
 }
 
-.thoughtsCard:hover {
+.slidingCard:hover {
     transform: scale(1.05);
     background-color: #404040;
-}
-
-.projectCard {
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    cursor: pointer;
-    width: 100%;
-    border-bottom: 1px solid #404040;
-}
-
-.projectCard:hover {
-
 }

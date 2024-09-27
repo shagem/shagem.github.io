@@ -63,20 +63,42 @@
     </header>
     <!-- Main -->
     <main class="px-6">
-        <section class="max-w-screen-lg mx-auto my-6">
-            <!-- Project Card-->
-            <div class="projectCard border-t border-gray-700">
-                <h3 class="text-xl">RentCars</h3>
-                <!-- Card Body -->
-                <div class="projectCardBody flex flex-col gap-4 overflow-hidden transition-all duration-300 ease-in-out max-h-0">
-                    <p class="mt-8">Intro:</p>
-                    <p>This was a fun mockup I completed in my own time utilizing TailwindCSS and some JavaScript.  I really enjoyed the color palette and minimalistic design.  This project helped me practice my usage of absolute and relative positioning with background elements.</p>
-                    <p>The design comes from @truong_huy on the Figma Community Website.</p>
-                    <a href="https://seanhageman.com/rentcars" class="text-red-500">View</a>
+        <section class="max-w-screen-lg mx-auto flex flex-col gap-6 my-6">
+            <!-- Card YeeHaw -->
+            <div class="slidingCard">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl">YeeHaw Entertainment Search (WIP)</h3>
+                    <img src="./src/imgs/arrow_down.svg" class="arrow-icon transform transition-transform duration-300" alt="Toggle">
                 </div>
-                <!-- End Card Body -->
+                <!-- Card Body -->
+                <div class="slidingCardBody max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="mt-4">Background:</p>
+                    <p class="mt-4">Another web mockup of a landing page, this time for a movie & TV show search website.  This one has a little more functionality then my previous projects, allowing you to search and interact with the cards.</p>
+                    <p class="mt-4">Utilizing Tailwind for styling and JavaScript for pulling data from the TMDb API.</p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://seanhageman.com/yeehaw" target="_blank" class="block max-w-40 py-2 px-6 rounded-lg border border-white text-center hover:bg-white hover:text-gray-700 font-medium transition-all duration-300 ease-in-out">Live View</a>
+                        <a href="https://github.com/shagem/yeehaw" target="_blank" class="block max-w-40 py-2 px-6 rounded-lg border border-white text-center hover:bg-white hover:text-gray-700 font-medium transition-all duration-300 ease-in-out">Code View</a>
+                    </div>
+                </div>
             </div>
-            <!-- End Project Card -->
+            <!-- Card End-->
+            <!-- Card RentCars -->
+            <div class="slidingCard">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl">RentCars</h3>
+                    <img src="./src/imgs/arrow_down.svg" class="arrow-icon transform transition-transform duration-300" alt="Toggle">
+                </div>
+                <!-- Card Body -->
+                <div class="slidingCardBody max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="mt-4">Background:</p>
+                    <p class="mt-4">My first web mockup of a landing page for a car rental app utilizing TailwindCSS and a little JavaScript.</p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://seanhageman.com/rentcars" target="_blank" class="block max-w-40 py-2 px-6 rounded-lg border border-white text-center hover:bg-white hover:text-gray-700 font-medium transition-all duration-300 ease-in-out">Live View</a>
+                        <a href="https://github.com/shagem/rentcars" target="_blank" class="block max-w-40 py-2 px-6 rounded-lg border border-white text-center hover:bg-white hover:text-gray-700 font-medium transition-all duration-300 ease-in-out">Code View</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card End-->
         </section>
     </main>
     <!-- Footer -->

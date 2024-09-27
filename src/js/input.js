@@ -69,37 +69,20 @@
 
 //My Thoughts collapsible card function
 (function() {
-    document.querySelectorAll('.thoughtsCard').forEach(card => {
+    document.querySelectorAll('.slidingCard').forEach(card => {
         card.addEventListener('click', function () {
-            const thoughtsCardBody = card.querySelector('.thoughtsCardBody');
+            const slidingCardBody = card.querySelector('.slidingCardBody');
             const arrowIcon = card.querySelector('.arrow-icon'); // Select the SVG icon
 
             // Check if cardBody is collapsed
-            if (thoughtsCardBody.style.maxHeight) {
+            if (slidingCardBody.style.maxHeight) {
                 // Collapse cardBody and rotate the icon back
-                thoughtsCardBody.style.maxHeight = null;
+                slidingCardBody.style.maxHeight = null;
                 arrowIcon.classList.remove('rotate-180'); // Rotates back to initial state
             } else {
                 // Expand cardBody and rotate the icon
-                thoughtsCardBody.style.maxHeight = thoughtsCardBody.scrollHeight + 'px';
+                slidingCardBody.style.maxHeight = slidingCardBody.scrollHeight + 'px';
                 arrowIcon.classList.add('rotate-180'); // Rotates 180 degrees
-            }
-        });
-    });
-})();
-
-(function() {
-    document.querySelectorAll('.projectCard').forEach(card => {
-        card.addEventListener('click', function () {
-            const projectCardBody = card.querySelector('.projectCardBody');
-
-            // Check if cardBody is collapsed
-            if (projectCardBody.style.maxHeight) {
-                // Collapse cardBody
-                projectCardBody.style.maxHeight = null;
-            } else {
-                // Expand cardBody
-                projectCardBody.style.maxHeight = projectCardBody.scrollHeight + 'px';
             }
         });
     });
