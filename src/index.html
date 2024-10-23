@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="./src/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./src/css/styles.css">    
+
+    <script src="./src/js/main.js" defer></script>
+    <title>Home | seanhageman.com</title>
+</head>
+    
+<body class="flex flex-col min-h-screen bg-gray-900 font-poppins text-white font-extralight">
+    <!-- Nav -->
+    <nav class="sticky lg:static top-0 left-0 z-[10] bg-gray-900 lg:bg-transparent border-b border-gray-700 lg:mb-10 lg:pb-10 lg:border-b lg:border-gray-700">
+        <section class="w-full py-4 lg:py-8 px-6">
+            <div class="flex items-center justify-between lg:max-w-screen-lg lg:mx-auto">
+                <div class="w-fit max-w-screen-xl flex gap-4">
+                    <a href="./index.html" class="lg:hidden">
+                        <img class="h-12 w-12" src="./src/imgs/toast.svg">
+                    </a>
+                    <h1 class="text-2xl lg:text-5xl leading-none hover:cursor-pointer"><a href="./index.html">Sean<br />Hageman</a></h1>
+                </div>
+                <button type="button" id="mobileNavBtn" class="lg:hidden hover:bg-gray-800 p-2 rounded-full" aria-label="menu button" title="menu button">
+                    <img src="./src/imgs/menu.svg">
+                </button>
+            </div>
+        </section>
+        <!-- Nav Links -->
+        <section id="mobileNav" class="max-lg:absolute max-lg:h-0 max-lg:overflow-hidden w-full px-6 transition-all duration-500 max-lg:bg-gray-800">
+            <div class="lg:max-w-screen-lg lg:mx-auto lg:flex items-center">
+                <div id="linksContainer" class="lg:w-full flex flex-col lg:flex-row gap-4 lg:gap-10 text-lg lg:text-sm tracking-wider my-4">
+                    <a href="./thoughts.html" class="group transition duration-200 cursor-pointer w-fit">THOUGHTS
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-white"></span>
+                    </a>
+                    <a href="./projects.html" class="group transition duration-200 cursor-pointer w-fit">PROJECTS
+                        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-px bg-white"></span>
+                    </a>
+                    <div class="flex gap-4 lg:ml-auto max-lg:mt-4 max-lg:pt-8 max-lg:border-t max-lg:border-gray-500">
+                        <a href="https://github.com/shagem" target="_blank">
+                            <img src="./src/imgs/github.svg" class="h-6 w-6">
+                        </a>
+                        <a href="https://codepen.io/shageman" target="_blank">
+                            <img src="./src/imgs/codepen.svg" class="h-6 w-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- Header -->
+    <header class="px-6">
+        <section class="max-w-screen-lg mx-auto flex-col lg:flex py-10 lg:py-0">
+            <div class="flex-col">
+                <h2 class="welcome text-2xl lg:text-3xl">Welcome.</h2>
+            </div>
+        </section>
+        <section class="">
+
+        </section>
+    </header>
+    <!-- Main -->
+    <main>
+
+    </main>
+    <!-- Footer -->
+    <footer class="mt-auto px-6 py-2">
+        <section class="max-w-screen-xl mx-auto">
+            <div class="flex justify-center items-center">
+                <p class="text-xs text-gray-500">Copyright &copy; 2024 Sean Hageman</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
